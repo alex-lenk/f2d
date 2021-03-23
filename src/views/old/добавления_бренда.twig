@@ -1,0 +1,190 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Добавление бренда - fun2day" %}
+{% block topPanel %}
+  {% set online = "true" %}
+  {% include 'desktop-table/top-panel.twig' %}
+{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <!-- BEGIN personal-area-aside -->
+    {% include 'partials/personal-area-aside.twig' %}
+    <!-- END personal-area-aside -->
+
+    <div class="col-xl-10 col-md-9">
+      <h1 class="personal-area-title">Добавление бренда</h1>
+
+      <div class="personal-area-holder">
+        <div class="col-inner-1">
+          <h2>О бренде</h2>
+
+          <div class="personal-area-avatar">
+            <div class="personal-area-avatar__pic"></div>
+            <input type="file" class="personal-area-avatar__field js__decor-file" accept=".svg, .jpeg, .jpg, .png">
+            <div class="personal-area-avatar__text">Загрузить логотип бренда</div>
+            <div class="personal-area-avatar__instance">Логотип должен быть не более 5 Mb, в&nbsp;формате SVG, PNG, JPEG</div>
+          </div>
+
+          <div class="personal-area__field-group form-group">
+            <label class="form-label">Название бренда</label>
+            <input type="text" class="form-control hide-placeholder" placeholder="Введите название бренда" autocomplete="off">
+          </div>
+
+          <div class="personal-area-gap form-group">
+            <label class="form-label">Информация о бренде</label>
+            <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Расскажите о вашем бренде (это будут видеть клиенты)"></textarea>
+            <div class="form-tip">не более 3 000 символов без пробелов</div>
+          </div>
+
+          <h2 class="mb-1">Адрес филиала</h2>
+          <div class="personal-area-lead">Напишите город и адрес места проведения</div>
+
+          <div class="personal-area__add mb-4 icon-plus as-link" data-toggle="modal" data-target="#addAddress-01">Добавить адрес</div>
+        </div>
+
+        <div class="personal-area__control">
+          <div class="row justify-content-center">
+            <div class="personal-area__control-box">
+              <button class="btn-primary btn"><span class="btn-text">Создать бренд</span></button>
+            </div>
+            <div class="personal-area__control-box align-self-center">
+              <button class="personal-area__control-reset btn">Удалить бренд</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- BEGIN: addAddress-ID -->
+<div class="modal fade" id="addAddress-01" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" style="max-width: 905px">
+    <!-- BEGIN form event address -->
+    <form action="/" class="modal-content">
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+
+      <fieldset class="mb-4">
+        <legend class="h3">Информация о филиале</legend>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <label class="form-label">Город</label>
+            <div class="modal-select form-group">
+              <select name="" id="">
+                <option value="">Город</option>
+                <option value="">Москва</option>
+                <option value="">Владивосток</option>
+                <option value="">Санкт-Петербург</option>
+                <option value="">Ростов на дону</option>
+                <option value="">Уфа</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="form-label">Адрес</label>
+              <input type="text" class="form-control hide-placeholder" placeholder="Адрес проведения мероприятия" autocomplete="off">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control hide-placeholder" placeholder="Введите e-mail *" autocomplete="off">
+              <div class="form-tip">на указанный e-mail будут приходить оповещения от клиентов</div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="form-label">Телефон</label>
+              <input type="tel" class="form-control hide-placeholder js__phone" placeholder="+7 (___) ___ - __ - __ *" autocomplete="off">
+              <div class="form-tip">Номер телефона, который увидят ваши клиенты после оплаты</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Информация о условиях работы</label>
+          <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Расскажите об особенностях и условиях работы (это будут видеть клиенты)"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="mb-3">
+        <legend class="h3">Ваш билет</legend>
+
+        <div class="personal-area__download-files">
+          <input type="file" accept=".svg, .jpeg, .jpg, .png" class="personal-area-avatar__field js__decor-file">
+          <div></div>
+          <div class="as-link">Загрузить схему проезда</div>
+          <div>Схема должна быть не более 5 Mb, в формате SVG, PNG, JPEG</div>
+        </div>
+
+        <div class="personal-area-gap form-group">
+          <label class="form-label">Как к вам проехать?</label>
+          <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Расскажите как к вам проехать"></textarea>
+        </div>
+
+        <h3 class="mb-2">Оповещения организатора</h3>
+
+        <div class="personal-area-lead">Все оповещения осуществляются по e-mail</div>
+
+        <div class="personal-area__check-group">
+          <div class="personal-area__check-group--block">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-label icon-check">Новые заказы</span>
+            </label>
+          </div>
+          <div class="personal-area__check-group--block">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" checked>
+              <span class="custom-control-label icon-check">Новые вопросы</span>
+            </label>
+          </div>
+          <div class="personal-area__check-group--block">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-label icon-check">Новые комментарии</span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="personal-area__control">
+        <div class="row">
+          <div class="personal-area__control-box">
+            <button class="btn-secondary btn" data-dismiss="modal"><span class="btn-text">Сохранить</span></button>
+          </div>
+          <div class="personal-area__control-box align-self-center">
+            <button class="personal-area__control-reset btn">Удалить филиал</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- END form event address -->
+  </div>
+</div>
+<!-- END: addAddress-ID -->
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

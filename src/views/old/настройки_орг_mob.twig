@@ -1,0 +1,109 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Настройки личного кабинета организатора" %}
+{% set versionDevice = "-mobile" %}
+{% block mobHeader %}
+  {% set online = "true" %}
+  {% include 'mobile/header.twig' %}
+{% endblock %}
+{% block content %}
+<div class="personal-area container">
+  <h1 class="personal-area-title">Настройки</h1>
+
+  <div class="personal-area-box mb-4">
+    <h2 class="personal-area-h2">Ваши данные</h2>
+
+    <div class="personal-area-lead">
+      Для изменения данных отправьте запрос на&nbsp;<a href="mailto:welcome@fun2day.ru" rel="nofollow">welcome@fun2day.ru</a>
+    </div>
+
+    <ul class="personal-area-list list-unstyled">
+      <li class="personal-area-list__item">
+        <div class="personal-area-list__label">E-mail:</div>
+        <div class="personal-area-list__data">Myemail@gmail.com</div>
+      </li>
+      <li class="personal-area-list__item">
+        <div class="personal-area-list__label">Телефон:</div>
+        <div class="personal-area-list__data">+7 (977) 123 45 54</div>
+      </li>
+      <li class="personal-area-list__item">
+        <div class="personal-area-list__label">Форма занятости:</div>
+        <div class="personal-area-list__data">Юридическое лицо</div>
+      </li>
+      <li class="personal-area-list__item">
+        <div class="personal-area-list__label">Организация:</div>
+        <div class="personal-area-list__data">ООО Чай с Индийской горы</div>
+      </li>
+      <li class="personal-area-list__item">
+        <div class="personal-area-list__label">Ваш ИНН:</div>
+        <div class="personal-area-list__data">456 891 234 568</div>
+      </li>
+    </ul>
+
+    <div class="personal-area-avatar personal-area-gap">
+      <div class="personal-area-avatar__pic"></div>
+      <input type="file" class="personal-area-avatar__field js__decor-file" accept=".svg, .jpeg, .jpg, .png">
+      <div class="personal-area-avatar__text">Загрузить аватар организатора</div>
+      <div class="personal-area-avatar__instance">Аватар должен быть не более 5 Mb, в&nbsp;формате SVG, PNG, JPEG</div>
+    </div>
+
+    <h2 class="personal-area-h2">Представитель Организатора</h2>
+
+    <div class="personal-area-lead">Укажите контактное лицо для общения с&nbsp;сотрудником FUN2DAY</div>
+
+    <div class="personal-area__field-group">
+      <div class="form-group">
+        <label class="form-label">Имя</label>
+        <input type="text" class="form-control hide-placeholder" placeholder="Введите имя">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Телефон</label>
+        <input type="tel" class="form-control hide-placeholder js__phone" placeholder="+7 (___) ___ - __ - __" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label class="form-label">E-mail</label>
+        <input type="email" class="form-control hide-placeholder" placeholder="Введите e-mail">
+      </div>
+      <button class="btn-secondary btn">Сохранить</button>
+    </div>
+  </div>
+
+  <div class="personal-area-box mb-4">
+    {% include 'desktop-table/lk-support.twig' %}
+  </div>
+
+  <div class="personal-area-box mb-4">
+    <h2 class="personal-area-h2">Бренд</h2>
+
+    <div class="personal-area-lead">
+      Добавьте бренд под которым будут проходить ваши мероприятия.
+    </div>
+
+    <a href="настройки+бренд_орг_mob.html" class="btn-primary btn"><span class="btn-text">Добавить бренд</span></a>
+  </div>
+</div>
+
+<div class="floating-panel">
+  <a href="добавления_бренда_mob.html" class="btn-primary btn js__open-menu">
+    <span class="btn-text">Создать бренд</span>
+  </a>
+</div>
+{% endblock %}
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом" %}
+{% set versionDevice = "-mobile" %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+{% block content %}
+  <div class="personal-area container">
+    <div class="row">
+      <!-- BEGIN personal-area-aside -->
+      {#{% include 'partials/personal-area-aside.twig' %}#}
+      <!-- END personal-area-aside -->
+
+      <div class="col-xl-10 col-md-9">
+        <h1 class="personal-area-title">Мои отзывы</h1>
+
+        <div class="mb-5">
+          Оставляя свой отзыв, вы помогаете другим больше узнать о мероприятии, принять правильное решение и насладиться
+          отдыхом. В разделе “Мои заказы” найдите мероприятие, которое вы посетили и поделитесь своими впечатлениями.
+        </div>
+
+        <div class="h3 mb-5 pb-5">
+          Поделитесь своим мнением о мероприятиях, которые вы посетили!
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

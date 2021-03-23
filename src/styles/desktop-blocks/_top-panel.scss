@@ -1,0 +1,153 @@
+.top-panel {
+  width: 100%;
+  background: #E3E5EC;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.top-panel-holder {
+  height: 70px;
+  align-items: center;
+}
+
+.top-panel-all::before {
+  margin-right: 5px;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.top-panel-search {
+  flex-shrink: 0;
+}
+
+.top-panel-nav {
+  color: $black;
+  display: flex;
+  align-items: center;
+}
+
+.top-panel-left {
+  padding-right: 0;
+  display: flex;
+}
+
+.top-panel-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.top-panel-nav__item {
+  white-space: nowrap;
+}
+
+.top-panel__logo {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.top-panel-nav__link {
+  color: inherit;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: $grey;
+  }
+}
+
+.top-panel-currency {
+  margin-left: 20px;
+}
+
+.top-panel-compare {
+  flex-shrink: 0;
+}
+
+.top-panel-compare__counter {
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  line-height: 1;
+  padding-top: 2px;
+  background-color: #ba1f1f;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  z-index: 2;
+
+  &:empty {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .top-panel-all {
+    width: 100%;
+    padding: 7px 10px 7px 23px;
+  }
+  .top-panel-search {
+    margin-right: 30px;
+  }
+  .top-panel-nav__item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .top-panel-compare {
+    margin-right: 30px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1399px) {
+  .top-panel-currency {
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  .top-panel-lang {
+    font-size: 13px;
+  }
+  .top-panel-nav__item:not(:last-child) {
+    margin-right: 23px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .top-panel-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .top-panel {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .top-panel-all {
+    width: 180px;
+    margin-right: 20px;
+    padding: 6px 10px 8px;
+    font-size: 15px;
+  }
+  .top-panel-search {
+    margin-right: 20px;
+  }
+  .top-panel-nav__link {
+    font-size: 15px;
+  }
+  .top-panel-compare {
+    margin-right: 20px;
+  }
+}

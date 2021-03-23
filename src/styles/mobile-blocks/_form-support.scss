@@ -1,0 +1,17 @@
+.form-support {
+  padding: 20px 15px;
+  border-radius: 15px;
+  background-color: $grey5;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, .3);
+}
+
+.form-support__form {
+  padding-right: 9%;
+}
+
+.form-support__text {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}

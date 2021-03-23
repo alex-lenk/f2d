@@ -1,0 +1,326 @@
+/* ABOUT PAGE */
+.about-header {
+  height: 1164px;
+  padding-top: 124px;
+  text-align: center;
+  background: url(../img/about/about.svg) no-repeat bottom center;
+}
+
+.about-header__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  color: $darkBlue;
+}
+
+.about-header__pre-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: $darkBlue;
+}
+
+.about-header__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #616586;
+}
+
+.about-intro {
+  padding-top: 113px;
+  margin-bottom: 135px;
+  position: relative;
+
+  &::before {
+    right: 22px;
+    position: absolute;
+    background: url(../img/about/zen.svg) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+}
+
+.about-intro__box {
+  max-width: 685px;
+}
+
+.about-intro__title {
+  margin-bottom: 5px;
+}
+
+.about-info {
+  margin-bottom: 50px;
+}
+
+.about-info__list {
+  display: flex;
+}
+
+.about-info__item {
+  margin-bottom: 33px;
+  display: flex;
+
+  &::before {
+    width: 203px;
+    height: 225px;
+    margin-right: 30px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: '';
+  }
+}
+
+.about-info__first::before {
+  background-image: url(../img/about/media-01.svg);
+}
+
+.about-info__second::before {
+  background-image: url(../img/about/media-02.svg);
+}
+
+.about-info__third::before {
+  background-image: url(../img/about/media-03.svg);
+}
+
+.about-info__fourth::before {
+  background-image: url(../img/about/media-04.svg);
+}
+
+.about-info__fifth::before {
+  background-image: url(../img/about/media-05.svg);
+}
+
+.about-info__sixth::before {
+  background-image: url(../img/about/media-06.svg);
+}
+
+.about-info__item-content {
+  padding-top: 15px;
+}
+
+.about-info__item-title {
+  margin-bottom: 5px;
+}
+
+.about-offer {
+  height: 705px;
+  padding-top: 59px;
+  margin-top: 36px;
+  margin-bottom: 112px;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 945px;
+    top: -230px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: url(../img/about/yoga.svg) no-repeat bottom center;
+    content: '';
+  }
+}
+
+.about-offer-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about-offer__title {
+  font-size: 48px;
+  margin-bottom: auto;
+  text-align: center;
+  color: $darkBlue;
+}
+
+.about-service {
+  margin-bottom: 70px;
+}
+
+.about-service__title {
+  margin-bottom: 30px;
+}
+
+.about-service__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-service__item-title {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.about-auth {
+  padding-top: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+    content: '';
+  }
+}
+
+.about-auth__btn {
+  margin-right: 30px;
+}
+
+.about-faq {
+  margin-bottom: 100px;
+}
+
+.faq-item:not(:first-child) {
+  margin-top: 50px;
+}
+
+.work-countries {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.work-countries__item {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  text-align: center;
+  max-width: 25%;
+  flex-basis: 25%;
+
+  &::before {
+    width: 100%;
+    max-width: 240px;
+    height: 240px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    content: '';
+  }
+}
+
+.work-countries__russian::before {
+  background-image: url(../img/about/russian.svg);
+}
+
+.work-countries__spain::before {
+  background-image: url(../img/about/spain.svg);
+}
+
+.work-countries__italy::before {
+  background-image: url(../img/about/italy.svg);
+}
+
+.work-countries__china::before {
+  background-image: url(../img/about/china.svg);
+}
+
+.work-countries__name {
+  &::after {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+  }
+
+  &:not(.work-countries__available)::after {
+    background-image: url(../img/icons/loading.svg);
+  }
+}
+
+.work-countries__available::after {
+  background-image: url(../img/icons/check-green.svg);
+}
+
+.about-content {
+  padding-bottom: 787px;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: 960px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../img/about/pre-footer.svg) no-repeat top center;
+    content: '';
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-offer__nav {
+    margin-bottom: -15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-intro::before {
+    width: 711px;
+    height: 488px;
+    top: -208px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .about-header,
+  .about-offer::before,
+  .about-content::after {
+    background-size: cover;
+  }
+  .about-header {
+    height: 1400px;
+  }
+  .about-offer::before {
+    height: 1059px;
+  }
+  .about-content::after {
+    background-position-y: center;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .about-intro::before {
+    width: 355px;
+    height: 244px;
+    top: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-intro::before {
+    width: 355px;
+    height: 244px;
+    top: -150px;
+  }
+  .about-info__item::before {
+    width: 100px;
+    height: 112px;
+  }
+  .about-offer {
+    padding-bottom: 60px;
+  }
+  .about-offer__nav .nav-direction-link {
+    box-shadow: none;
+  }
+}

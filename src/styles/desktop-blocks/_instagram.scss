@@ -1,0 +1,30 @@
+.instagram {
+  margin-bottom: 100px
+}
+
+.instagram-inner {
+  background-color: #fff;
+  padding: 30px 25px;
+  box-shadow: 3px 3px 8px #C7C9D2, -2px -2px 6px #FAFBFF;
+  border-radius: 15px;
+  display: block;
+  transition: box-shadow .4s;
+
+  &:hover {
+    box-shadow: none;
+
+    .instagram-img {
+      opacity: .85;
+    }
+  }
+}
+
+.instagram-img {
+  transition: opacity .4s;
+}
+
+@media (max-width: 991px) {
+  .instagram-item {
+    margin-bottom: 30px;
+  }
+}

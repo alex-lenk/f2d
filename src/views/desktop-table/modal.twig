@@ -1,0 +1,2459 @@
+<div class="modal fade" id="modal-auth" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <form id="modal-login">
+        <h2 class="modal-title">Вход</h2>
+
+        <div class="modal-subtitle">Для входа используйте ваш е-mail и&nbsp;пароль</div>
+
+        <div class="form-group">
+          <label class="sr-only">Введите e-mail</label>
+          <input type="email" name="email" class="form-control hide-placeholder" placeholder="Введите e-mail *" autocomplete="off" required>
+        </div>
+
+        <div class="form-group">
+          <label class="sr-only">Пароль</label>
+          <input type="password" name="password" class="form-control hide-placeholder" placeholder="Пароль *" autocomplete="off" required>
+        </div>
+
+        <div class="form-group__btn">
+          <button type="submit" class="btn btn-primary"><span class="btn-text">Войти</span></button>
+          <div class="form-group__link as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-forgot">Забыли пароли?</div>
+        </div>
+
+        <div class="modal-box__bottom">
+          <div class="modal-box__bottom-text">У вас нет аккаунта на Fun2Day?</div>
+          <div class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-register">Зарегистрироваться</div>
+        </div>
+
+        <div class="mt-4">
+          Вы можете <span class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-register__org">зарегистрироваться как организатор</span>
+        </div>
+      </form>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-forgot" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <form id="modal-form-forgot">
+        <h2 class="modal-title">Восстановления пароля</h2>
+
+        <div class="modal-subtitle">Укажите адрес электронной почты, который вы&nbsp;использовали при регистрации.</div>
+
+        <div class="form-group">
+          <input type="email" name="email" class="form-control hide-placeholder" placeholder="E-mail *" autocomplete="off">
+        </div>
+
+        <div class="form-group__btn">
+          <button type="submit" class="btn btn-primary"><span class="btn-text">Восстановить</span></button>
+          <div class="form-group__link as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-auth">Вспомнили пароль?</div>
+        </div>
+
+        <div class="modal-box__bottom">
+          <div class="modal-box__bottom-text">У вас нет аккаунта на Fun2Day?</div>
+          <div class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-register">Зарегистрироваться</div>
+        </div>
+      </form>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-register" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <form id="modal-form-register">
+        <h2 class="modal-title">Регистрация</h2>
+
+        <div class="modal-subtitle">
+          Укажите адрес электронной почты, мы&nbsp;отправим вам
+          пароль для входа в&nbsp;личный кабинет
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" class="form-control hide-placeholder" placeholder="Укажите Ваш E-mail *" autocomplete="off" required>
+        </div>
+
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" name="acceptAgreement" class="custom-control-input" required>
+            <span class="custom-control-label icon-check">Согласие на обработку</span>
+          </label>
+        </div>
+
+        <div class="form-group__btn">
+          <button type="submit" class="btn btn-primary"><span class="btn-text">Зарегистрироваться</span></button>
+        </div>
+
+        <div class="modal-box__bottom">
+          <div class="modal-box__bottom-text">Уже есть аккаунт на Fun2Day?</div>
+          <div class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-auth">Войти</div>
+        </div>
+      </form>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-auth__org" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <form id="modal-login__org">
+        <h2 class="modal-title">Войти как организатор</h2>
+
+        <div class="modal-subtitle">Для входа используйте ваш е-mail и&nbsp;пароль</div>
+
+        <div class="form-group">
+          <label class="sr-only">Введите e-mail</label>
+          <input type="email" name="email" class="form-control hide-placeholder" placeholder="Введите e-mail *" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label class="sr-only">Пароль</label>
+          <input type="password" name="password" class="form-control hide-placeholder" placeholder="Пароль *" autocomplete="off">
+        </div>
+
+        <div class="form-group__btn">
+          <button type="submit" class="btn btn-primary"><span class="btn-text">Войти</span></button>
+          <div class="form-group__link as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-forgot__org">Забыли пароли?</div>
+        </div>
+
+        <div class="modal-box__bottom">
+          <div class="modal-box__bottom-text">У вас нет аккаунта на Fun2Day?</div>
+          <div class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-register__org">Зарегистрироваться</div>
+        </div>
+      </form>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-register__org" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <form id="modal-form-register__org">
+        <h2 class="modal-title">Регистрация организатора</h2>
+
+        <div class="mb-4">
+          <h3 class="mb-1">Личные данные</h3>
+
+          <div class="modal-subtitle">
+            Укажите адрес электронной почты, мы&nbsp;отправим вам
+            пароль для входа в&nbsp;личный кабинет
+          </div>
+
+          <div class="form-group">
+            <label class="sr-only">Укажите Ваш E-mail</label>
+            <input type="email" name="email" class="form-control hide-placeholder" placeholder="Укажите Ваш E-mail *" autocomplete="off" required>
+          </div>
+
+          <div class="modal-subtitle">Укажите телефон для сотрудников компании Фан2дэй</div>
+          <div class="form-group">
+            <label class="sr-only">Укажите телефон</label>
+            <input type="tel" name="phone" class="form-control hide-placeholder js__phone" placeholder="+7 (___) ___ __-__*" autocomplete="new-phone">
+            <div class="d-none"></div>
+          </div>
+        </div>
+
+        <h3 class="mb-4">Данные организации</h3>
+
+        <div class="modal-form__group form-group">
+          <label class="modal-form__group-item custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">Физ. лицо</span>
+          </label>
+          <label class="modal-form__group-item custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input" checked="">
+            <span class="custom-control-label">Юр. лицо</span>
+          </label>
+          <label class="modal-form__group-item custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">ИП</span>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label class="sr-only">Название организации</label>
+          <input type="text" class="form-control hide-placeholder" placeholder="Название организации" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label class="sr-only">Введите ИНН</label>
+          <input type="text" name="legal_inn" class="form-control hide-placeholder" placeholder="Введите ИНН" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" name="acceptAgreement" class="custom-control-input">
+            <span class="custom-control-label icon-check">Согласие на обработку</span>
+          </label>
+        </div>
+
+        <div class="form-group__btn">
+          <button type="submit" class="btn btn-primary"><span class="btn-text">Зарегистрироваться</span></button>
+        </div>
+
+        <div class="modal-box__bottom">
+          <div class="modal-box__bottom-text">Уже есть аккаунт на Fun2Day?</div>
+          <div class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-auth__org">Войти</div>
+        </div>
+      </form>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-forgot__org" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <form id="modal-form-forgot__org">
+        <h2 class="modal-title">Восстановления пароля</h2>
+
+        <div class="modal-subtitle">Укажите адрес электронной почты, который вы&nbsp;использовали при регистрации.</div>
+
+        <div class="form-group">
+          <input type="email" name="email" class="form-control hide-placeholder" placeholder="E-mail *" autocomplete="off">
+        </div>
+
+        <div class="form-group__btn">
+          <button type="submit" class="btn btn-primary"><span class="btn-text">Восстановить</span></button>
+          <div class="form-group__link as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-auth__org">Вспомнили пароль?</div>
+        </div>
+
+        <div class="modal-box__bottom">
+          <div class="modal-box__bottom-text">У вас нет аккаунта на Fun2Day?</div>
+          <div class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-register__org">Зарегистрироваться</div>
+        </div>
+      </form>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-recovery" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+      <h2>Восстановления пароля</h2>
+
+      <div>
+        Мы отправили письмо с инструкцией по восстановлению пароля на адрес
+        <a href="Myemail@gmail.com">Myemail@gmail.com</a>
+      </div>
+
+      <div class="modal-box__bottom">
+        <span class="as-link js__auth" data-dismiss="modal" data-toggle="modal" data-target="#modal-auth">Войти</span>
+      </div>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-check" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-box">
+
+      <h2>Мы проверяем ваши данные</h2>
+
+      <div class="mb-4">
+        На&nbsp;электронный адрес <a href="Myemail@gmail.com">Myemail@gmail.com</a> в&nbsp;течении 1&nbsp;дня будет
+        отправлено письмо с&nbsp;вашим паролем и&nbsp;инструкцией по&nbsp;завершению регистрации.
+      </div>
+
+      <div>
+        <button class="btn-primary btn js__modal-close" data-dismiss="modal">
+          <span class="btn-text">Закрыть</span>
+        </button>
+      </div>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modal-add-event" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered container">
+    <div class="modal-content">
+      <div class="modal-add-event__title">Добавление мероприятия</div>
+
+      <p class="mb-4">Вы можете выбрать не более 2х вариантов</p>
+
+      <div class="modal-add-event__container js__tabs">
+        <ul class="entertainment-sidebar nav-section list-unstyled js__tabs-list">
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav active" data-tab="nav-section-item-01">
+            <span class="icon-paint"></span>
+            <span class="nav-section-item__text">Творчество</span>
+          </li>
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-02">
+            <span class="icon-guitar"></span>
+            <span class="nav-section-item__text">Музыка</span>
+          </li>
+
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-03">
+            <span class="icon-food-tray"></span>
+            <span class="nav-section-item__text">Еда и напитки</span>
+          </li>
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-04">
+            <span class="icon-self-care"></span>
+            <span class="nav-section-item__text">Уход за собой</span>
+          </li>
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-05">
+            <span class="icon-extreme"></span>
+            <span class="nav-section-item__text">Экстрим</span>
+          </li>
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-06">
+            <span class="icon-running"></span>
+            <span class="nav-section-item__text">Спорт</span>
+          </li>
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-07">
+            <span class="icon-education"></span>
+            <span class="nav-section-item__text">Развитие</span>
+          </li>
+          <li class="nav-section-item tab-links icon-arrow-right js__tab-nav" data-tab="nav-section-item-08">
+            <span class="icon-balloon"></span>
+            <span class="nav-section-item__text">Разное</span>
+          </li>
+        </ul>
+
+        <div class="entertainment-content">
+          <div class="entertainment-section tab-panel js__tab-panel active" id="nav-section-item-01">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-02">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-03">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-04">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-05">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-06">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-07">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="entertainment-section tab-panel js__tab-panel" id="nav-section-item-08">
+            <div class="entertainment-boxed">
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Сделай сам</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Роспись по стеклу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Валяние из войлока</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление мыла</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Создание авторских украшений</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по живописи</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по флористике</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Кулинария</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс бармена</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Приготовление суши</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Кондитерское искусство</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер-класс по приготовлению пряников</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по шоколадоварению</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Церемония приготовления какао</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Танцевальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по восточным танцам</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по хип-хопу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по балету</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по танго</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по бачате</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по брейкдансу</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Музыкальное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс по вокалу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на барабанах</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс DJ</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на фортепиано</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на гитаре</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс игры на флейте</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Детям</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Аквапарк</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Картинг</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Батуты</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Парк игрового обучения</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Развивающие игры</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Детский лагерь</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="entertainment-box">
+                <div class="entertainment-box__title">
+                  <span class="entertainment-box__title-link">Разное</span>
+                </div>
+                <ul class="entertainment-box__list list-unstyled">
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс жонглирования</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Курс по файершоу</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс макияжа</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Мастер класс прически</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Рыбалка</span>
+                    </label>
+                  </li>
+                  <li class="modal-add-event__item">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input">
+                      <span class="custom-control-label icon-check">Актерское мастерство</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="btn-text">Сохранить</span></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="chooseAnotherModal" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered detail-affiliate">
+    <div class="detail-affiliate__content modal-content">
+      <div class="h2 mb-3">Выберите филиал</div>
+
+      <ul class="detail-affiliate__list list-unstyled">
+        <li class="detail-affiliate__item">
+          <label class="custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input" checked>
+            <span class="custom-control-label">Москва, Мичуринский проспект 33 к1</span>
+
+            <span class="detail-affiliate__price">
+              <div class="sticker-discount"><span class="sticker-discount__value">49</span></div>
+              <del class="detail-affiliate__price-old">1 000 ₽</del>
+              <span class="detail-affiliate__price-new">500 ₽</span>
+            </span>
+          </label>
+        </li>
+
+        <li class="detail-affiliate__item">
+          <label class="custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">Москва, Проспект Мира 12 к4</span>
+
+            <span class="detail-affiliate__price">
+              <span class="detail-affiliate__price-new">500 ₽</span>
+            </span>
+          </label>
+        </li>
+
+        <li class="detail-affiliate__item">
+          <label class="custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">Одинцово, Кутузовская 84</span>
+
+            <span class="detail-affiliate__price">
+              <span class="detail-affiliate__price-new">500 ₽</span>
+            </span>
+          </label>
+        </li>
+
+        <li class="detail-affiliate__item">
+          <label class="custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">Москва, Староконюшенный переулок, 33</span>
+
+            <span class="detail-affiliate__price">
+              <span class="detail-affiliate__price-new">500 ₽</span>
+            </span>
+          </label>
+        </li>
+
+        <li class="detail-affiliate__item">
+          <label class="custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">Красногорск, Строительный проезд, 4</span>
+
+            <span class="detail-affiliate__price">
+              <span class="detail-affiliate__price-new">500 ₽</span>
+            </span>
+          </label>
+        </li>
+
+        <li class="detail-affiliate__item">
+          <label class="custom-control custom-radio">
+            <input type="radio" name="radio2" class="custom-control-input">
+            <span class="custom-control-label">Лобня, Циолковского, 9</span>
+
+            <span class="detail-affiliate__price">
+              <span class="detail-affiliate__price-new">500 ₽</span>
+            </span>
+          </label>
+        </li>
+      </ul>
+
+      <div class="text-center">
+        <button class="btn-primary btn" data-dismiss="modal"><span class="btn-text">Выбрать</span></button>
+      </div>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>

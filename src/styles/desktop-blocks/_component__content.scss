@@ -1,0 +1,25 @@
+.content-box {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, 0.3);
+  background-color: $grey5;
+}
+
+.content-box__light {
+  padding: 30px;
+  background-color: $grey4;
+  box-shadow: -2px -2px 6px #FAFBFF, 3px 3px 8px #C7C9D2;
+  border-radius: 15px;
+}
+
+.content-modal {
+  max-width: 934px
+}
+
+.content-aside__light {
+  padding: 20px;
+  background-color: $grey4;
+  box-shadow: -2px -2px 6px #FAFBFF, 3px 3px 8px #C7C9D2;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

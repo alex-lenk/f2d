@@ -1,0 +1,214 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Мои отзывы (нет отзывов)" %}
+{% block topPanel %}
+  {% set online = "true" %}
+  {% include 'desktop-table/top-panel.twig' %}
+{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <!-- BEGIN personal-area-aside -->
+    {% include 'partials/personal-area-aside.twig' %}
+    <!-- END personal-area-aside -->
+
+    <div class="col-xl-10 col-md-9">
+      <h1 class="personal-area-title">Мои отзывы</h1>
+
+      <div class="mb-5">
+        Оставляя свой отзыв, вы помогаете другим больше узнать о мероприятии, принять правильное решение и насладиться
+        отдыхом. В разделе “Мои заказы” найдите мероприятие, которое вы посетили и поделитесь своими впечатлениями.
+      </div>
+
+      <!-- BEGIN: comments -->
+      <div class="comments-list">
+        <section class="comment">
+          <div class="comment-head">
+            <a href="#" class="user-account">
+                <span class="user-account__pic user-account__pic-large">
+                  <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                </span>
+              <span class="user-account__name">Иван Иванович Иванов</span>
+            </a>
+
+            <span class="ml-auto rating-progress" data-rating-progress="3"></span>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="h3 mb-0 mr-auto">Мастер класс по приготовлению зелёного чая</div>
+            <div>ID 345123</div>
+          </div>
+
+          <div class="comment-text">
+            <ul class="estimate list-unstyled">
+              <li class="estimate-item estimate-item__active estimate-quality">
+                Качество обслуживания
+              </li>
+              <li class="estimate-item estimate-item__active estimate-money">
+                Доступная цена
+              </li>
+              <li class="estimate-item estimate-item__active estimate-target">
+                Соответствует ожиданию
+              </li>
+              <li class="estimate-item estimate-item__active estimate-lock">
+                Уровень безопасности
+              </li>
+              <li class="estimate-item estimate-item__active estimate-emoji">
+                Было весело
+              </li>
+            </ul>
+
+            Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно,
+            допускает график функции многих переменных. График функции, в первом приближении, решительно создает
+            абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма
+            традиционно обуславливает функциональный анализ.
+          </div>
+
+          <div class="comment-foot list-unstyled">
+            <div class="comment-foot__item">
+              <span class="btn-circle icon-like comment-foot__item-icon"></span>
+              Нравиться: 5
+            </div>
+
+            <div class="comment-foot__item">
+              <span class="btn-circle icon-comment comment-foot__item-icon"></span>
+              Комментарий: 1
+            </div>
+
+            <div class="ml-auto">22.03.2020</div>
+          </div>
+        </section>
+
+        <section class="comment">
+          <div class="comment-head">
+            <a href="#" class="user-account">
+                <span class="user-account__pic user-account__pic-large">
+                  <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                </span>
+              <span class="user-account__name">Иван Иванович Иванов</span>
+            </a>
+
+            <span class="ml-auto rating-progress" data-rating-progress="5"></span>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="h3 mb-0 mr-auto">Мастер класс по приготовлению зелёного чая</div>
+            <div>ID 345123</div>
+          </div>
+
+          <div class="comment-text">
+            <ul class="estimate list-unstyled">
+              <li class="estimate-item estimate-item__active estimate-quality">
+                Качество обслуживания
+              </li>
+              <li class="estimate-item estimate-item__active estimate-money">
+                Доступная цена
+              </li>
+              <li class="estimate-item estimate-item__active estimate-target">
+                Соответствует ожиданию
+              </li>
+              <li class="estimate-item estimate-item__active estimate-lock">
+                Уровень безопасности
+              </li>
+              <li class="estimate-item estimate-item__active estimate-emoji">
+                Было весело
+              </li>
+            </ul>
+
+            Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно,
+            допускает график функции многих переменных. График функции, в первом приближении, решительно создает
+            абстрактный интеграл.
+          </div>
+
+          <div class="comment-foot list-unstyled">
+            <div class="comment-foot__item">
+              <span class="btn-circle icon-like comment-foot__item-icon"></span>
+              Нравиться: 94
+            </div>
+
+            <div class="comment-foot__item">
+              <span class="btn-circle icon-comment comment-foot__item-icon"></span>
+              Комментарий: 999
+            </div>
+
+            <div class="ml-auto">01.07.2020</div>
+          </div>
+        </section>
+
+        <section class="comment">
+          <div class="comment-head">
+            <a href="#" class="user-account">
+              <span class="user-account__pic user-account__pic-large"></span>
+              <span class="user-account__name">Констациная Константиновна Констановна</span>
+            </a>
+
+            <span class="ml-auto rating-progress" data-rating-progress="0"></span>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="h3 mb-0 mr-auto">Мастер класс по приготовлению зелёного чая</div>
+            <div>ID 345123</div>
+          </div>
+
+          <div class="comment-text">
+            <ul class="estimate list-unstyled">
+              <li class="estimate-item estimate-item__active estimate-quality">
+                Качество обслуживания
+              </li>
+              <li class="estimate-item estimate-item__active estimate-money">
+                Доступная цена
+              </li>
+              <li class="estimate-item estimate-item__active estimate-target">
+                Соответствует ожиданию
+              </li>
+              <li class="estimate-item estimate-item__active estimate-lock">
+                Уровень безопасности
+              </li>
+              <li class="estimate-item estimate-item__active estimate-emoji">
+                Было весело
+              </li>
+            </ul>
+
+            Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно,
+            допускает график функции многих переменных. График функции, в первом приближении, решительно создает
+            абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма
+            традиционно обуславливает функциональный анализ.
+          </div>
+
+          <div class="comment-foot list-unstyled">
+            <div class="comment-foot__item">
+              <span class="btn-circle icon-like comment-foot__item-icon"></span>
+              Нравиться: 0
+            </div>
+
+            <div class="comment-foot__item">
+              <span class="btn-circle icon-comment comment-foot__item-icon"></span>
+              Комментарий: 0
+            </div>
+
+            <div class="ml-auto">22.03.2020</div>
+          </div>
+        </section>
+      </div>
+      <!-- END: comments -->
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

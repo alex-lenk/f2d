@@ -1,0 +1,372 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Мастер класс по приготовлению зелёного чая" %}
+{% block topPanel %}
+  {% set online = "false" %}
+  {% include 'desktop-table/top-panel.twig' %}
+{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="personal-area-title">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом.</h1>
+
+      <section class="detail-gift mb-3">
+        <div>
+          <h3 class="mb-1">Ваш подарок!</h3>
+          <div class="detail-gift__text">
+            Тут будет написано какие условия получения подарка, лайк, репост, вроде это будет заполнять вендор. Пример: забронируй экскурсию  на двоих и получи скидку 15% при оплате на месте.
+          </div>
+        </div>
+      </section>
+
+      <form class="content-box mb-5">
+        <h2 class="mb-4">Выберите филиал</h2>
+        <div class="personal-area-option__group mb-5">
+          <select>
+            <option>Мичуринский проспект 32 к4</option>
+            <option>Проспект Мира 27</option>
+            <option>Лесная улица 22-44</option>
+          </select>
+        </div>
+
+
+        <h2 class="mb-4">Выберите дату и время</h2>
+
+        <div class="personal-area-option__group personal-area-column__wrap mb-1">
+          <div class="personal-area-column form-group">
+              <input type="text" placeholder="Выбрать дату" class="form-control dropdown-select js__select-date" autocomplete="off">
+          </div>
+
+          <div class="personal-area-column form-group">
+            <div class="personal-area__field-short">
+              <input type="text" class="form-control hide-placeholder js__num" inputmode="text" placeholder="Часы">
+              <span>-</span>
+              <input type="text" class="form-control hide-placeholder js__num" inputmode="text" placeholder="Минуты">
+            </div>
+          </div>
+        </div>
+
+        <div class="datepicker mb-4 d-none" id="ordering-event"></div>
+
+
+        <div class="personal-area-option__detailed">
+          <h3 class="mb-3">Укажите количество человек</h3>
+
+          <ul class="personal-area-option__list list-unstyled">
+            <li class="personal-area-option__item">
+              <div class="personal-area-option__label">Стандартный билет</div>
+
+              <div class="personal-area-option__price">
+                <div class="sticker-discount"><span class="sticker-discount__value">49</span></div>
+                <del class="personal-area-price__old">1 000 ₽</del>
+                <div>500 ₽</div>
+              </div>
+
+              <div class="personal-area-amount">
+                <button type="button" class="personal-area-amount__control icon-minus js-amount-minus btn-circle"></button>
+                <input type="text" name="quantity" class="personal-area-amount__count js-amount-count" value="2" autocomplete="off">
+                <button type="button" class="personal-area-amount__control icon-plus js-amount-plus btn-circle"></button>
+              </div>
+            </li>
+
+            <li class="personal-area-option__item">
+              <div class="personal-area-option__label">Дети 5-18 лет</div>
+
+              <div class="personal-area-option__price">
+                <div>500 ₽</div>
+              </div>
+
+              <div class="personal-area-amount">
+                <button type="button"  class="personal-area-amount__control icon-minus js-amount-minus btn-circle"></button>
+                <input type="text" name="quantity" class="personal-area-amount__count js-amount-count" value="0" autocomplete="off">
+                <button type="button" class="personal-area-amount__control icon-plus js-amount-plus btn-circle"></button>
+              </div>
+            </li>
+
+            <li class="personal-area-option__item">
+              <div class="personal-area-option__label">Студенты (о/ф обучения)</div>
+
+              <div class="personal-area-option__price">
+                <div>500 ₽</div>
+              </div>
+
+              <div class="personal-area-amount">
+                <button type="button"  class="personal-area-amount__control icon-minus js-amount-minus btn-circle"></button>
+                <input type="text" name="quantity" class="personal-area-amount__count js-amount-count" value="0" autocomplete="off">
+                <button type="button" class="personal-area-amount__control icon-plus js-amount-plus btn-circle"></button>
+              </div>
+            </li>
+
+            <li class="personal-area-option__item">
+              <div class="personal-area-option__label">Пенсионеры</div>
+
+              <div class="personal-area-option__price">
+                <div>500 ₽</div>
+              </div>
+
+              <div class="personal-area-amount">
+                <button type="button"  class="personal-area-amount__control icon-minus js-amount-minus btn-circle"></button>
+                <input type="text" name="quantity" class="personal-area-amount__count js-amount-count" value="0" autocomplete="off">
+                <button type="button" class="personal-area-amount__control icon-plus js-amount-plus btn-circle"></button>
+              </div>
+            </li>
+
+            <li class="personal-area-option__item">
+              <div class="personal-area-option__label">Инвалиды</div>
+
+              <div class="personal-area-option__price">
+                <div>500 ₽</div>
+              </div>
+
+              <div class="personal-area-amount">
+                <button type="button"  class="personal-area-amount__control icon-minus js-amount-minus btn-circle"></button>
+                <input type="text" name="quantity" class="personal-area-amount__count js-amount-count" value="0" autocomplete="off">
+                <button type="button" class="personal-area-amount__control icon-plus js-amount-plus btn-circle"></button>
+              </div>
+            </li>
+
+            <li class="personal-area-option__item">
+              <div class="personal-area-option__label">Дети до 4-х лет</div>
+
+              <div class="personal-area-option__price">
+                <div>500 ₽</div>
+              </div>
+
+              <div class="personal-area-amount">
+                <button type="button"  class="personal-area-amount__control icon-minus js-amount-minus btn-circle"></button>
+                <input type="text" name="quantity" class="personal-area-amount__count js-amount-count" value="0" autocomplete="off">
+                <button type="button" class="personal-area-amount__control icon-plus js-amount-plus btn-circle"></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="personal-area-total">
+          <div>Стоимость мероприятия за 2 человека:</div>
+          <div class="personal-area-total__sum ml-auto">1 000 ₽</div>
+        </div>
+
+        <div class="personal-area-promo-code">
+          <span class="as-link__dashed js__enter-promo-code">Ввести промокод</span>
+
+          <div class="js__personal-area-discount pt-4" style="display: none">
+            <div class="h2">Промокод</div>
+
+            <div class="d-flex align-items-center mb-4">
+              <div class="personal-area-discount__field">
+                <input type="text" class="form-control hide-placeholder" autocomplete="off">
+              </div>
+
+              <button class="personal-area-discount__button ml-2 mr-4 btn-primary btn">
+                <span class="btn-text">Применить</span>
+              </button>
+
+              <div class="as-link__dashed js__cancel-promo-code">У меня нет промокода</div>
+            </div>
+
+            <div class="personal-area-discount__line">
+              <div class="personal-area-discount__success icon-check-circle">SKIDKA</div>
+              <div class="personal-area-discount__line-text">- Промокод применен (скидка 20% на первый заказ) </div>
+              <div class="personal-area-discount__line-link as-link as-link__dashed js__delete-promo-code">Удалить</div>
+            </div>
+
+            <div class="personal-area-discount__line">
+              <div class="personal-area-discount__cancel icon-check-circle">SKIDOS</div>
+              <div>- Промокод не применен</div>
+              <div class="personal-area-discount__line-link as-link__dashed js__delete-promo-code">Удалить</div>
+            </div>
+          </div>
+
+          <div class="personal-area__add-small mt-5">
+            Стоимость мероприятия установлена организатором в&nbsp;евро.<br>
+            Пересчет осуществляется по&nbsp;официальному курсу&nbsp;ЦБ на&nbsp;дату фактического платежа.
+          </div>
+        </div>
+      </form>
+
+
+      <section class="content-box">
+        <h2>Укажите свои контактные данные</h2>
+
+        <div class="row">
+          <form action="/" class="col-lg-6 form-validate">
+            <div class="form-group">
+              <label class="sr-only" for="detail-name">Имя</label>
+              <input type="text" id="detail-name" name="inputName" class="form-control hide-placeholder" placeholder="Имя *" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <label class="sr-only" for="detail-email">E-mail</label>
+              <input type="email" id="detail-email" name="inputEmail" class="form-control hide-placeholder" placeholder="E-mail *" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <label class="sr-only">Ваш вопрос</label>
+              <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Комментарии и пожелания" style="height:120px;overflow-y:hidden;"></textarea>
+            </div>
+
+            <div class="form-group pt-1">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" name="acceptAgreement" class="custom-control-input" checked>
+                <span class="custom-control-label icon-check">Я&nbsp;принимаю условия пользовательского соглашения и&nbsp;согласен на&nbsp;обработку персональных данных</span>
+              </label>
+            </div>
+
+            <div class="form-group pt-1">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" checked>
+                <span class="custom-control-label icon-check">Согласие на&nbsp;получение email-рассылок FUN2DAY</span>
+              </label>
+            </div>
+
+            <button class="btn-primary btn"><span class="btn-text">Отправить запрос</span></button>
+          </form>
+
+          <div class="col-lg-6 form-support__decor">
+            <img src="img/decor/form-decor.svg" alt="">
+          </div>
+
+          <div class="col-lg-9 mt-4">
+            <div>При оформлении мероприятия вам не&nbsp;надо ничего оплачивать. Оплата в&nbsp;размере %&nbsp;происходит для бронирования после согласования времени с&nbsp;вендором</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="col-lg-4">
+      <div class="content-box__light mb-5">
+        <div class="h2 mb-0 text-center">г. Москва</div>
+        <div class="h3 mb-3 text-center">Мичуринский проспект 33 к1</div>
+
+        <div class="aside-info__org">
+          <div class="aside-info__org-line">
+            <div class="h3 mb-0">Организатор</div>
+          </div>
+
+          <div class="user-account">
+            <span class="user-account__pic user-account__pic-large"><img src="img/example/avatar-06.png" alt=""></span>
+            <span class="user-account__name user-account__color">OOO Чай с Индийской горы</span>
+          </div>
+        </div>
+
+        <div class="h3 mb-1">Важные детали</div>
+
+        <ul class="detail-specialty list-unstyled">
+          <li class="detail-specialty__item">
+            <div>Длительность:</div>
+            <div class="detail-specialty__value">1 час</div>
+          </li>
+          <li class="detail-specialty__item">
+            <div>Количество человек:</div>
+            <div class="detail-specialty__value">От 1 до 20</div>
+          </li>
+          <li class="detail-specialty__item">
+            <div>Возрастная группа:</div>
+            <div class="detail-specialty__value">20 - 30 лет</div>
+          </li>
+          <li class="detail-specialty__item">
+            <div>Формат мероприятия:</div>
+            <div class="detail-specialty__value">Индивидуальное</div>
+          </li>
+        </ul>
+
+        <div class="mt-3">Вы&nbsp;можете отменить мероприятие за&nbsp;12&nbsp;часов до&nbsp;его начала</div>
+      </div>
+
+      <ul class="list-check list-unstyled">
+        <li class="list-check__item content-aside__light">
+          <div class="list-check__title">Можно задать вопросы</div>
+          Напишите комментарий к заказу и обсудите с гидом детали экскурсии
+        </li>
+        <li class="list-check__item content-aside__light">
+          <div class="list-check__title">Моментальное бронирование</div>
+          После оплаты экскурсии на сайте мы вышлем вам билет с контактами гида и точным местом встречи
+        </li>
+        <li class="list-check__item content-aside__light">
+          <div class="list-check__title">Хорошие условия возврата</div>
+          При отмене за 48 часов до экскурсии мы вернем всю предоплату на вашу карту
+        </li>
+        <li class="list-check__item content-aside__light">
+          <div class="list-check__title">Служба поддержки</div>
+          Позвоните нам, если у вас есть вопросы:
+          +7 (499) 917‑02‑01 (c 9 до 21 по Москве) или напишите на support@tripster.ru
+        </li>
+        <li class="list-check__item content-aside__light">
+          <div class="list-check__title">Мы работаем с 2013 года</div>
+          Каждый месяц десятки тысяч человек ходят на наши экскурсии в 602 городах мира
+        </li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+  <!-- BEGIN: desktop component -->
+  <nav class="back-panel">
+    <div class="container">
+      <div class="back-panel-inner align-items-center row">
+        <div class="col-xl-3">
+          <a href="detail-desk.html" class="btn btn-bright">
+            <span class="btn-text back-panel__icon icon-arrow-short"> вернуться назад</span>
+          </a>
+        </div>
+
+        <div class="col-xl-2 mx-auto">
+          <a href="#"><img src="img/logo.svg" class="top-panel__logo" alt="fun2day"></a>
+        </div>
+
+        <div class="col-xl-3 text-right">
+          {% if online == "true" %}
+            <div class="top-panel-user dropdown">
+              <div class="dropdown-toggle js__dropdown-toggle icon-arrow-down">
+                <div class="dropdown-media">
+                  <img src="img/example/avatar-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="dropdown-menu dropdown-menu__decor dropdown-menu__right">
+                <ul class="personal-area-menu list-unstyled">
+                  <li class="personal-area-menu__item">
+                    <a href="#" class="personal-area-menu__link icon-orders">Заказы</a>
+                  </li>
+                  <li class="personal-area-menu__item">
+                    <a href="#" class="personal-area-menu__link icon-location">Мероприятия</a>
+                  </li>
+                  <li class="personal-area-menu__item">
+                    <a href="#" class="personal-area-menu__link icon-settings">Настройки</a>
+                  </li>
+                  <li class="personal-area-menu__item">
+                    <a href="#" class="personal-area-menu__link icon-support">Поддержка</a>
+                  </li>
+                </ul>
+                <a href="#" class="personal-area-out">Выйти</a>
+              </div>
+            </div>
+          {% else %}
+            <div class="btn btn-bright" data-toggle="modal" data-target="#modal-auth">
+              <span class="btn-text">Войти</span>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END: desktop component -->
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

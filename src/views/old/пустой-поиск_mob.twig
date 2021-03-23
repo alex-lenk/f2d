@@ -1,0 +1,182 @@
+{% extends "layout/layout.twig" %}
+{% set title = "По запросу “qwerty” ничего не найдено" %}
+{% set versionDevice = "-mobile" %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+{% block content %}
+  <div class="search-page container">
+    <div class="search-page-section">
+      <h1>По запросу “qwerty” ничего не найдено</h1>
+
+      <ul class="list-unstyled">
+        <li>
+          • Проверьте, правильно ли введен запрос, нет ли опечаток, например «мессаж» вместо «массаж»</li>
+        <li>
+          • Попробуйте использовать более общий запрос, например «массаж» при поиске категории «Тайский массаж в 4 руки»
+        </li>
+        <li>
+          • Или вы можете воспользоваться нашим <a href="#">каталогом.</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="search-page-section row">
+      <div class="col-xl-8">
+        <section class="form-support content-box">
+          <form action="#" class="form-support__form form-validate">
+            <h2>Не нашли что искали?</h2>
+
+            <p>
+              Расскажите нам какое мероприятие вы&nbsp;искали и&nbsp;не&nbsp;нашли, и&nbsp;мы&nbsp;обязательно найдём для
+              вас организатора!
+            </p>
+
+            <div class="form-group">
+              <label class="sr-only">Напишите какую услугу вы искали и не нашли?</label>
+              <textarea name="fieldRequired" class="form-control__textarea form-control hide-placeholder" placeholder="Напишите какую услугу вы искали и не нашли? *"></textarea>
+            </div>
+
+            <button class="btn-primary btn"><span class="btn-text">Отправить</span></button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+
+    <div class="search-page-section">
+      <h2>Популярные поисковые запросы</h2>
+
+      <!-- BEGIN: tag-list -->
+      <ul class="catalog-tag tag-list list-unstyled">
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Мини тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Короткий тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Тэг 11</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Длинный тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Короткий тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Ещё какой-то тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Это тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Короткий тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Ещё какой-то тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Короткий тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Это тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Мини тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Тэг 11</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Длинный тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Мини тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Короткий тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Тэг 11</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Длинный тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Короткий тэг</a></li>
+        <li class="tag-list__item"><a href="#" class="tag-list__link">Ещё какой-то тэг</a></li>
+      </ul>
+      <!-- END: tag-list -->
+    </div>
+
+
+    <div class="novelty">
+      <h2>Мы рекомендуем</h2>
+
+      <div class="row">
+        <div class="novelty-item">
+          <a href="#" class="card">
+            <div class="card-media">
+              <img src="img/example/card-05@2x.jpg" class="card-media__img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-title">Мастер классы по флористике</div>
+              <p class="card-text">Творите вместе с Fun2Day каждый день.</p>
+              <div class="card-footer">От 1 000 ₽</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="novelty-item">
+          <a href="#" class="card">
+            <div class="card-media">
+              <img src="img/example/card-06@2x.jpg" class="card-media__img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-title">Роспись по керамике</div>
+              <p class="card-text">Готовьте вместе с Fun2Day каждый день.</p>
+              <div class="card-footer">От 750 ₽</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="novelty-item">
+          <a href="#" class="card">
+            <div class="card-media">
+              <img src="img/example/card-09@2x.jpg" class="card-media__img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-title">Турецкий мыльный массаж</div>
+              <p class="card-text">Создавайте незабываемые наряды вместе с Fun2Day каждый день.</p>
+              <div class="card-footer">От 2 500 ₽</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="novelty-item">
+          <a href="#" class="card">
+            <div class="card-media">
+              <img src="img/example/card-10@2x.jpg" class="card-media__img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-title">Мастер-класс по приготовлению пряников</div>
+              <p class="card-text">Создавайте произведения искусства вместе с Fun2Day каждый день.</p>
+              <div class="card-footer">От 250 ₽</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="novelty-item">
+          <a href="#" class="card">
+            <div class="card-media">
+              <img src="img/example/card-07@2x.jpg" class="card-media__img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-title">Прыжок с парашютом</div>
+              <p class="card-text">Пойте вместе с Fun2Day каждый день.</p>
+              <div class="card-footer">От 5 000 ₽</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="novelty-item">
+          <a href="#" class="card">
+            <div class="card-media">
+              <img src="img/example/card-08@2x.jpg" class="card-media__img" alt="">
+            </div>
+            <div class="card-body">
+              <div class="card-title">Занятие по дрифту</div>
+              <p class="card-text">Танцуйте на машине вместе с Fun2Day каждый день.</p>
+              <div class="card-footer">От 15 000 ₽</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

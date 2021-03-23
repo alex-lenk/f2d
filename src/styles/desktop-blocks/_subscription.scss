@@ -1,0 +1,32 @@
+.subscription {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, 0.3);
+  border-radius: 15px;
+  background: $grey5 url(../img/media/bg-subscription.svg) no-repeat 97% center;
+  background-size: 370px 275px;
+}
+
+.subscription-form {
+  max-width: 50%;
+}
+
+@media (min-width: 1400px) {
+  .subscription {
+    width: 66%;
+  }
+}
+
+@media (max-width: 991px) {
+  .subscription {
+    background-size: 290px 200px;
+    background-position: 100% 95%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .subscription {
+    width: 79%;
+  }
+}

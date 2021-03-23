@@ -1,0 +1,28 @@
+.badge {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+}
+
+.badge-suspended {
+  background: linear-gradient(101.78deg, #CD3131 0.63%, #AA1B1B 100%);
+}
+
+.badge-success {
+  background: linear-gradient(101.78deg, #3FC76D 0.63%, #29A855 100%);
+}
+
+.badge-confirmed {
+  background: linear-gradient(101.78deg, #4975CB 0.63%, #2A56AC 100%);
+}
+
+.badge-order {
+  background: linear-gradient(101.86deg, #06AEF5 0.63%, #019CCD 100%);
+}
+
+.badge-note {
+  background: linear-gradient(101.86deg, #FF981F 0.63%, #E2810F 100%);
+}

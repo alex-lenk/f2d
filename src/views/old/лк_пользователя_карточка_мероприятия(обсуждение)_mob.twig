@@ -1,0 +1,276 @@
+{% extends "layout/layout.twig" %}
+{% set title = "лк пользователя карточка мероприятия (обсуждение)" %}
+{% set versionDevice = "-mobile" %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+{% block content %}
+<div class="personal-area container">
+  <div class="personal-area-id">ID 345123</div>
+
+  <h1 class="personal-area-title">
+    Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом.
+  </h1>
+
+  <div class="d-flex align-items-center mb-3">
+    <div class="personal-area-badge badge badge-note">Вопрос</div>
+
+    <a href="#" class="ml-auto">О мероприятии >>></a>
+  </div>
+
+  <div class="content-box__light mb-5">
+    <div class="h2 mb-0 text-center">г. Москва</div>
+    <div class="h3 mb-3 text-center">Мичуринский проспект 33 к1</div>
+
+    <div class="aside-info__org">
+      <div class="aside-info__org-line">
+        <div class="h3 mb-0">Организатор</div>
+
+        <a href="#question" class="as-link__dashed text-inherit ml-auto js__go-anchor" rel="nofollow">Задать вопрос</a>
+      </div>
+
+      <div class="user-account">
+        <span class="user-account__pic user-account__pic-large"><img src="img/example/avatar-06.png" alt=""></span>
+        <span class="user-account__name user-account__color">OOO Чай с Индийской горы</span>
+      </div>
+    </div>
+
+    <div class="h3 mb-1">Важные детали</div>
+
+    <ul class="detail-specialty list-unstyled">
+      <li class="detail-specialty__item">
+        <div>Количество человек:</div>
+        <div class="detail-specialty__value">От 1 до 20</div>
+      </li>
+      <li class="detail-specialty__item">
+        <div>Формат мероприятия:</div>
+        <div class="detail-specialty__value">Индивидуальное</div>
+      </li>
+    </ul>
+
+    <div class="aside-info__price">
+      <div class="sticker-discount"><span class="sticker-discount__value">49</span></div>
+      <del class="aside-info__price-old">1 000 ₽</del>
+      <div class="aside-info__price-new">500 ₽</div>
+      <div>за мероприятие</div>
+    </div>
+
+    <a href="#" class="btn-primary btn"><span class="btn-text">Заказать</span></a>
+
+    <div class="mt-3 mb-4 text-black">
+      До&nbsp;оплаты заказа согласуйте с&nbsp;организатором дату и&nbsp;время мероприятия.
+      Организатор должен подтвердить ваш выбор
+    </div>
+
+    <div>Вы&nbsp;можете отменить мероприятие за&nbsp;12&nbsp;часов до&nbsp;его начала</div>
+  </div>
+
+
+  <div class="stages mb-5">
+    <h2 class="mb-4">Вы задали вопрос организатору, но заказ еще не подтвержден.</h2>
+
+    <ul class="list-unstyled">
+      <li class="stage-item">
+        <div class="stage-item__title icon-check-circle">Шаг 1. Выберите дату и время</div>
+        <div class="stage-item__text">
+          Необходимо согласовать с организатором дату и время проведения мероприятия
+        </div>
+      </li>
+      <li class="stage-item">
+        <div class="stage-item__title icon-check-circle">Шаг 2. Уточнение деталей</div>
+        <div class="stage-item__text">
+          Вы в любой момент можете задавать вопросы организатору на нашей платформе.
+        </div>
+      </li>
+      <li class="stage-item">
+        <div class="stage-item__title icon-check-circle">Шаг 3. Подтверждение организатором</div>
+        <div class="stage-item__text">
+          Перед оплатой организатор должен подтвердить наличие свободного места
+        </div>
+      </li>
+      <li class="stage-item">
+        <div class="stage-item__title icon-check-circle">Шаг 4. Оплата 10% стоимости заказ</div>
+        <div class="stage-item__text">
+          Оплатите 10% от стоимости заказа для бронирования места
+        </div>
+      </li>
+      <li class="stage-item">
+        <div class="stage-item__title icon-check-circle">Шаг 5. Оставьте отзыв</div>
+        <div class="stage-item__text">
+          Оцените мероприятие, расскажите нам как всё прошло, это важно для нас
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <section class="personal-area-chat content-box mb-4" id="question">
+    <h2>Задайте вопрос организатору</h2>
+
+    <div class="user-account mb-3">
+      <span class="user-account__pic user-account__pic-large"><img src="img/example/avatar-06.png" alt=""></span>
+      <span class="user-account__name user-account__color">OOO Чай с Индийской горы</span>
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control__textarea form-control hide-placeholder" placeholder="окно чата, будет стилизовано после внедрения плагина" style="height:120px;overflow-y:hidden;"></textarea>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="detail-text" name="inputChatText" class="form-control hide-placeholder" placeholder="Напишите сообщение...">
+    </div>
+
+    <button class="btn-primary btn"><span class="btn-text">Отправить</span></button>
+  </section>
+
+
+  <div class="content-box__light mb-5">
+    <span class="rating-progress mb-3" data-rating-progress="4"></span>
+    <div class="mb-3 text-black">
+      Оставьте отзыв о нашем сервисе или о работе организатора, это поможет нам стать лучше
+    </div>
+
+    <div data-toggle="modal" data-target="#write-review" class="btn-secondary btn">
+      <span class="btn-text">Написать отзыв</span>
+    </div>
+  </div>
+
+  <div class="content-box__light">
+    <div class="mb-3 text-black">
+      Напишите и мы вам поможем, вы легко найдёте ответ на вопрос.
+    </div>
+
+    <a href="#" class="btn-secondary btn"><span class="btn-text">Помощь</span></a>
+  </div>
+
+  <div class="mt-3 mb-3">
+    С политикой возврата билетов вы можете ознакомиться перейдя на страницу <a href="#">гарантии</a>
+  </div>
+</div>
+
+
+<div class="modal fade" id="write-review" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered content-modal">
+    <div class="modal-content">
+      <div class="modal-content__title h2">Ваш отзыв о мероприятии</div>
+
+      <section id="review-step-1">
+        <div class="modal-body">
+          <ol class="review-step list-unstyled mb-4">
+            <li class="review-step-item icon-arrow-long review-step-active">1</li>
+            <li class="review-step-item icon-arrow-long">2</li>
+            <li class="review-step-item">3</li>
+          </ol>
+
+          <div class="review-event h3 mb-4 text-center">Поставьте свою оценку мероприятию</div>
+
+          <ul class="rating-review rating-review__no-rade mb-3 list-unstyled">
+            <li class="rating-review-item"></li>
+            <li class="rating-review-item"></li>
+            <li class="rating-review-item"></li>
+            <li class="rating-review-item"></li>
+            <li class="rating-review-item"></li>
+          </ul>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="btn-primary btn js__rating-review disabled">
+            <span class="btn-text">Поставить оценку</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="review-step-2" class="d-none">
+        <div class="modal-body">
+          <ol class="review-step list-unstyled mb-4">
+            <li class="review-step-item icon-arrow-long">1</li>
+            <li class="review-step-item icon-arrow-long review-step-active">2</li>
+            <li class="review-step-item">3</li>
+          </ol>
+
+          <div class="review-event h3 mb-4 text-center">Что вам особенно понравилось?</div>
+
+          <ul class="estimate js__estimate list-unstyled">
+            <li class="estimate-item estimate-quality"> Качество обслуживания </li>
+            <li class="estimate-item estimate-money"> Доступная цена </li>
+            <li class="estimate-item estimate-target"> Соответствует ожиданию </li>
+            <li class="estimate-item estimate-lock"> Уровень безопасности </li>
+            <li class="estimate-item estimate-emoji"> Было весело </li>
+          </ul>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="btn-primary btn js__rating-estimate disabled">
+            <span class="btn-text">Сделать выбор</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="review-step-3" class="d-none">
+        <div class="modal-body">
+          <ol class="review-step list-unstyled mb-4">
+            <li class="review-step-item icon-arrow-long">1</li>
+            <li class="review-step-item icon-arrow-long">2</li>
+            <li class="review-step-item review-step-active">3</li>
+          </ol>
+
+          <div class="h3 mb-4 text-center">Напишите ваш отзыв о мероприятии</div>
+
+          <textarea class="form-control__textarea form-control" placeholder="Ваш отзыв"></textarea>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="btn-primary btn js__add-review">
+            <span class="btn-text">Оставить отзыв</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="review-step-4" class="d-none text-center pt-5 pb-5">
+        <h2>Спасибо! Ваш отзыв отправлен</h2>
+        <div>Как мы можем улучшить мероприятие?</div>
+        <div>Напишите <span class="as-link__dashed js__review-team">приватный комментарий</span> для команды FUN2DAY</div>
+      </section>
+
+      <section id="review-step-5" class="d-none">
+        <div class="modal-body text-center pt-5">
+          <h2>Напишите приватный комментарий для команды FUN2DAY</h2>
+
+          <textarea class="form-control__textarea form-control" placeholder="Ваш отзыв"></textarea>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="btn-primary btn js__review-final">
+            <span class="btn-text">Оставить приватный отзыв</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="review-step-6" class="d-none text-center pt-5 pb-5">
+        <h2>Спасибо за сотрудничество!</h2>
+
+        Мы дорожим вашим мнением
+      </section>
+
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

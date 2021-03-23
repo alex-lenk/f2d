@@ -1,0 +1,55 @@
+.estimate {
+  padding: 7px 16px ;
+  margin: 0 -16px 20px;
+  background-color: $grey4;
+  display: flex;
+  overflow-x: auto;
+}
+
+.estimate-item {
+  padding-right: 20px;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+
+  &::before {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 5px;
+    display: block;
+    opacity: .5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    content: '';
+  }
+}
+
+.estimate-item__active {
+  color: $black;
+
+  &::before {
+    opacity: 1;
+  }
+}
+
+.estimate-quality::before {
+  background-image: url(../img/icons/quality.svg);
+}
+
+.estimate-money::before {
+  background-image: url(../img/icons/money.svg);
+}
+
+.estimate-target::before {
+  background-image: url(../img/icons/target.svg);
+}
+
+.estimate-lock::before {
+  background-image: url(../img/icons/lock.svg);
+}
+
+.estimate-emoji::before {
+  background-image: url(../img/icons/emoji.svg);
+}

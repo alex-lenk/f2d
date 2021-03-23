@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 50">
+  <defs>
+    <style>
+      .cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#eeeff4;}.cls-4{fill:#eff0f5;}.cls-5{fill:#f0f1f6;}.cls-6{fill:#f1f2f7;}.cls-7{fill:#f3f4f9;}.cls-8{fill:#f4f5fa;}.cls-9{fill:#f5f6fb;}.cls-10{fill:#f6f7fc;}.cls-11{fill:#eecd23;}
+    </style>
+    <clipPath id="clip-path">
+      <path class="cls-1"
+            d="M26.5,3.24l5.22,16.07L32,20H49.58L35.9,29.94l-.59.42.23.7,5.22,16.07L27.09,37.19l-.59-.42-.59.42L12.24,47.13l5.22-16.07.23-.7-.59-.42L3.42,20H21.05l.23-.69Z"/>
+    </clipPath>
+  </defs>
+  <title>star-empty</title>
+  <g class="cls-2">
+    <polygon class="cls-3" points="9.51 3.24 3.42 9.33 3.42 3.24 9.51 3.24"/>
+    <polygon class="cls-4" points="23.26 3.24 3.42 23.08 3.42 9.33 9.51 3.24 23.26 3.24"/>
+    <polygon class="cls-5" points="35.64 3.24 36.33 3.92 3.42 36.83 3.42 23.08 23.26 3.24 35.64 3.24"/>
+    <polygon class="cls-6" points="36.33 3.92 43.2 10.8 8.14 45.86 3.42 41.14 3.42 36.83 36.33 3.92"/>
+    <polygon class="cls-7" points="43.2 10.8 49.58 17.17 49.58 18.17 20.62 47.13 9.41 47.13 8.14 45.86 43.2 10.8"/>
+    <polygon class="cls-8" points="49.58 31.92 34.37 47.13 20.62 47.13 49.58 18.17 49.58 31.92"/>
+    <polygon class="cls-9" points="49.58 45.67 48.12 47.13 34.37 47.13 49.58 31.92 49.58 45.67"/>
+    <polygon class="cls-10" points="48.12 47.13 49.58 45.67 49.58 47.13 48.12 47.13"/>
+  </g>
+  <path class="cls-11"
+        d="M42.66,49.75,26.5,38,10.34,49.75l6.17-19h0L.35,19h20L26.5,0l6.17,19h20L36.49,30.75ZM26.5,35.53l12.36,9L34.14,30,46.5,21H31.22L26.5,6.47,21.78,21H6.5l12.36,9L14.14,44.51Z"/>
+</svg>

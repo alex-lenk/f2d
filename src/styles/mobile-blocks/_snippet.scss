@@ -1,0 +1,91 @@
+.snippet-item {
+  padding: 19px 14px;
+  margin-bottom: 15px;
+  background: $grey-gradient;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 4px #C7C9D2, -2px -2px 4px #FAFBFF;
+  border-radius: 15px;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.snippet-aside {
+  margin-bottom: 11px;
+  order: 1;
+}
+
+.snippet-aside__box {
+  position: relative;
+}
+
+.snippet-aside__box-img {
+  border-radius: 15px;
+}
+
+.sticker-format,
+.snippet-item .snippet-avatar,
+.snippet-item .snippet-duration,
+.snippet-text {
+  display: none;
+}
+
+.snippet-content__panel {
+  margin-bottom: 17px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.snippet-title {
+  margin-bottom: 14px;
+  color: $black;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.snippet-review {
+  font-size: 14px;
+}
+
+.snippet-price {
+  display: flex;
+  align-items: center;
+  order: 2;
+
+  &::before {
+    margin-right: 10px;
+  }
+}
+
+.snippet-price__old {
+  margin-right: 10px;
+  font-weight: 700;
+  color: $black;
+}
+
+.snippet-price__new {
+  margin-right: 10px;
+  color: $black;
+}
+
+.snippet-price__label {
+  font-size: 14px;
+}
+
+.snippet-present {
+  height: 32px;
+  border-radius: 5px;
+  line-height: 1;
+  color: $black;
+  background-color: $grey5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    margin-right: 5px;
+  }
+}

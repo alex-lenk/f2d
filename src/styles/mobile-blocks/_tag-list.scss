@@ -1,0 +1,30 @@
+.tag-list {
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 21px;
+  margin-right: -15px;
+  overflow-x: auto;
+  display: flex;
+}
+
+.tag-list__item {
+  padding-right: 15px;
+}
+
+.tag-list__link {
+  padding: 2px 18px;
+  color: inherit;
+  border: 2px solid;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  white-space: nowrap;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
+
+  &:hover {
+    color: $black;
+    border-color: $grey5;
+    background-color: $grey5;
+  }
+}

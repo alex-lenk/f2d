@@ -1,0 +1,74 @@
+<!-- BEGIN: desktop component -->
+<nav class="top-panel">
+  <div class="container">
+    <div class="top-panel-holder row">
+      <div class="col-xl-2">
+        <div class="top-panel-all btn btn-bright icon-menu-list top-panel-all__JS">
+          <span class="btn-text">Все развлечения</span>
+        </div>
+      </div>
+
+      <div class="top-panel-left col-xxl-3 col-xl-4">
+        <div class="top-panel-search btn-circle btn-circle__small icon-search js__search"></div>
+
+        <ul class="top-panel-nav list-unstyled">
+          <li class="top-panel-nav__item"><a href="#" class="top-panel-nav__link">О проекте</a></li>
+          <li class="top-panel-nav__item"><a href="#" class="top-panel-nav__link">Клиентам</a></li>
+          <li class="top-panel-nav__item"><a href="#" class="top-panel-nav__link">Staycation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xl-1 col-xxl-2">
+        <a href="#"><img src="img/logo.svg" class="top-panel__logo" alt="fun2day"></a>
+      </div>
+
+      <div class="col-xl-2">
+        <ul class="top-panel-nav list-unstyled">
+          <li class="top-panel-nav__item"><a href="#" class="top-panel-nav__link">Блог</a></li>
+          <li class="top-panel-nav__item"><a href="#" class="top-panel-nav__link">Организаторам</a></li>
+        </ul>
+      </div>
+
+      <div class="top-panel-right col-xl-3">
+        {% include 'top-panel-lang.twig' %}
+        {% include 'top-panel-currency.twig' %}
+
+        <a href="#" class="top-panel-compare btn-circle btn-circle__small icon-compare">
+          <span class="top-panel-compare__counter">2</span>
+        </a>
+
+        {% if online == "true" %}
+          <div class="top-panel-user dropdown">
+            <div class="dropdown-toggle js__dropdown-toggle icon-arrow-down">
+              <div class="dropdown-media">
+                <img src="img/example/avatar-03.jpg" alt="">
+              </div>
+            </div>
+            <div class="dropdown-menu dropdown-menu__decor dropdown-menu__right">
+              <ul class="personal-area-menu list-unstyled">
+                <li class="personal-area-menu__item">
+                  <a href="#" class="personal-area-menu__link icon-orders">Заказы</a>
+                </li>
+                <li class="personal-area-menu__item">
+                  <a href="#" class="personal-area-menu__link icon-location">Мероприятия</a>
+                </li>
+                <li class="personal-area-menu__item">
+                  <a href="#" class="personal-area-menu__link icon-settings">Настройки</a>
+                </li>
+                <li class="personal-area-menu__item">
+                  <a href="#" class="personal-area-menu__link icon-support">Поддержка</a>
+                </li>
+              </ul>
+              <a href="#" class="personal-area-out">Выйти</a>
+            </div>
+          </div>
+        {% else %}
+          <div class="btn btn-bright" data-toggle="modal" data-target="#modal-auth">
+            <span class="btn-text">Войти</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END: desktop component -->

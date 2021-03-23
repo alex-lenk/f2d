@@ -1,0 +1,276 @@
+@import "icons-variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ka48ho') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  line-height: 1;
+
+  &::before {
+    @include coreIcon
+  }
+}
+
+.icon-stars::before {
+  content: $icon-stars;
+}
+
+.icon-bell::before {
+  content: $icon-bell;
+}
+
+.icon-cancel::before {
+  content: $icon-cancel;
+}
+
+.icon-rub::before {
+  content: $icon-rub;
+}
+
+.icon-member::before {
+  content: $icon-member;
+}
+
+.icon-question::before {
+  content: $icon-question;
+}
+
+.icon-confirmed::before {
+  content: $icon-confirmed;
+}
+
+.icon-pen::before {
+  content: $icon-pen;
+}
+
+.icon-stop::before {
+  content: $icon-stop;
+}
+
+.icon-support::before {
+  content: $icon-support;
+}
+
+.icon-settings::before {
+  content: $icon-settings;
+}
+
+.icon-location::before {
+  content: $icon-location;
+}
+
+.icon-orders::before {
+  content: $icon-orders;
+}
+
+.icon-filter::before {
+  content: $icon-filter;
+}
+
+.icon-arrow-bend::before {
+  content: $icon-arrow-bend;
+}
+
+.icon-phone::before {
+  content: $icon-phone;
+}
+
+.icon-arrow-long::before {
+  content: $icon-arrow-long;
+}
+
+.icon-extreme::before {
+  content: $icon-extreme;
+}
+
+.icon-arrow-left::before {
+  content: $icon-arrow-left;
+}
+
+.icon-arrow-short::before {
+  content: $icon-arrow-short;
+}
+
+.icon-arrow-right::before {
+  content: $icon-arrow-right;
+}
+
+.icon-attention::before {
+  content: $icon-attention;
+}
+
+.icon-balloon::before {
+  content: $icon-balloon;
+}
+
+.icon-chat::before {
+  content: $icon-chat;
+}
+
+.icon-check::before {
+  content: $icon-check;
+}
+
+.icon-check-circle::before {
+  content: $icon-check-circle;
+}
+
+.icon-close::before {
+  content: $icon-close;
+}
+
+.icon-comment::before {
+  content: $icon-comment;
+}
+
+.icon-compare::before {
+  content: $icon-compare;
+}
+
+.icon-decrease::before {
+  content: $icon-decrease;
+}
+
+.icon-education::before {
+  content: $icon-education;
+}
+
+.icon-food-tray::before {
+  content: $icon-food-tray;
+}
+
+.icon-gift::before {
+  content: $icon-gift;
+}
+
+.icon-guitar::before {
+  content: $icon-guitar;
+}
+
+.icon-self-care::before {
+  content: $icon-self-care;
+}
+
+.icon-increase::before {
+  content: $icon-increase;
+}
+
+.icon-like::before {
+  content: $icon-like;
+}
+
+.icon-menu::before {
+  content: $icon-menu;
+}
+
+.icon-menu-circle::before {
+  content: $icon-menu-circle;
+}
+
+.icon-menu-list::before {
+  content: $icon-menu-list;
+}
+
+.icon-minus::before {
+  content: $icon-minus;
+}
+
+.icon-notification::before {
+  content: $icon-notification;
+}
+
+.icon-paint::before {
+  content: $icon-paint;
+}
+
+.icon-plus::before {
+  content: $icon-plus;
+}
+
+.icon-refresh::before {
+  content: $icon-refresh;
+}
+
+.icon-running::before {
+  content: $icon-running;
+}
+
+.icon-search::before {
+  content: $icon-search;
+}
+
+.icon-time::before {
+  content: $icon-time;
+}
+
+.icon-user::before {
+  content: $icon-user;
+}
+
+.icon-arrow-down::before {
+  content: $icon-arrow-down;
+}
+
+.icon-christmas {
+  background-image: url(../img/icons/christmas.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    box-shadow: none !important;
+    border: 0 solid transparent !important;
+    background: transparent !important;
+  }
+
+  &.link-offer-link {
+    background-position-y: 14px;
+    background-size: 35px 35px;
+  }
+
+  &.nav-direction-link {
+    background-position-y: 21px;
+    background-size: 35px 35px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .icon-christmas {
+    &.nav-section-item__decor {
+      background-image: url(../img/icons/christmas.svg);
+      background-repeat: no-repeat;
+      background-position: 2px center;
+      background-size: 27px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      box-shadow: none;
+      border-color: transparent;
+    }
+
+    &.nav-direction-link {
+      background-position-y: 32px;
+      background-size: 50px 50px;
+    }
+
+    &.footer-nav__title-link {
+      background-position: -2px center;
+      background-size: 27px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+@media (max-width: 1099px) {
+  .icon-christmas.menu-entertainment__item {
+    background-position: 0 14px;
+    background-size: 30px;
+  }
+}

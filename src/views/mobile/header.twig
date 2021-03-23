@@ -1,0 +1,70 @@
+<!-- BEGIN: mobile component -->
+<header class="header header-fixed">
+  <div class="container">
+    <div class="header-holder row">
+      <div class="col-2">
+        <div class="header-toggle btn-circle btn-circle__small icon-menu"></div>
+      </div>
+      {% if online == "true" %}
+      <div class="col-8">
+        <a href="/" class="header-logo"><img src="img/logo.svg" alt="fun2day"></a>
+      </div>
+      <div class="header-user col-2">
+        <div class="dropdown js__dropdown">
+          <div class="dropdown-toggle js__dropdown-toggle icon-arrow-down">
+            <div class="dropdown-media">
+              <img src="img/example/avatar-03.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="dropdown-menu dropdown-menu__decor dropdown-menu__right">
+            <ul class="personal-area-menu list-unstyled">
+              <li class="personal-area-menu__item">
+                <a href="#" class="personal-area-menu__link icon-orders">Заказы</a>
+              </li>
+              <li class="personal-area-menu__item">
+                <a href="#" class="personal-area-menu__link icon-location">Мероприятия</a>
+              </li>
+              <li class="personal-area-menu__item">
+                <a href="#" class="personal-area-menu__link icon-settings">Настройки</a>
+              </li>
+              <li class="personal-area-menu__item">
+                <a href="#" class="personal-area-menu__link icon-support">Поддержка</a>
+              </li>
+            </ul>
+            <a href="#" class="personal-area-out">Выйти</a>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <div class="col-2">
+        <div class="btn-circle btn-circle__small icon-search js__search"></div>
+      </div>
+      <div class="col-4">
+        <a href="/" class="header-logo"><img src="img/logo.svg" alt="fun2day"></a>
+      </div>
+      <div class="col-2">
+        <a href="tel:+79776958105" class="btn-circle btn-circle__small icon-phone" rel="nofollow"></a>
+      </div>
+      <div class="col-2 text-right">
+        <div class="btn-circle btn-circle__small icon-user" data-toggle="modal" data-target="#modal-auth"></div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Begin: search form -->
+    <div class="search-form__wrap">
+      <form class="search-form" action="/" method="GET">
+        <div class="search-form-box">
+          <input type="search" class="search-form-box__input form-control hide-placeholder" placeholder="Введите поисковой запрос">
+
+          <div class="search-form-box__back btn-circle icon-arrow-short"></div>
+
+          <button type="submit" class="search-form-btn btn-circle icon-search"></button>
+        </div>
+      </form>
+    </div>
+    <!-- END: search form -->
+  </div>
+</header>
+<!-- END: mobile component -->

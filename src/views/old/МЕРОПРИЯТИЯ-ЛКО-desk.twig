@@ -1,0 +1,445 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Мои мероприятия - fun2day" %}
+{% block topPanel %}
+  {% set online = "true" %}
+  {% include 'desktop-table/top-panel.twig' %}
+{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+  <div class="personal-area container">
+    <div class="row">
+      <!-- BEGIN personal-area-aside -->
+      {% include 'partials/personal-area-aside.twig' %}
+      <!-- END personal-area-aside -->
+
+      <div class="col-xl-10 col-md-9">
+        <h1 class="personal-area-title">Мои мероприятия</h1>
+
+        <div class="js__tabs">
+          <div class="personal-area-tabs">
+            <ul class="personal-area-tabs__list nav-tabs js__tabs-list">
+              <li class="nav-tabs__item js__tab-nav active" data-tab="menu-tab-1">
+                <div class="nav-tabs__text">Активные</div>
+              </li>
+              <li class="nav-tabs__item js__tab-nav" data-tab="menu-tab-2">
+                <div class="nav-tabs__text">Приостановленные</div>
+              </li>
+              <li class="nav-tabs__item js__tab-nav" data-tab="menu-tab-3">
+                <div class="nav-tabs__text">Архив</div>
+              </li>
+            </ul>
+
+            <a href="Добавления-мероприятия-(1-и-2)-desk.html" class="btn-primary btn"><span class="btn-text">Создать мероприятие</span></a>
+          </div>
+
+          <section class="tab-panel js__tab-panel active" id="menu-tab-1">
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Приостановить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Приостановить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Приостановить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">Групповое</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Приостановить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+          </section>
+
+          <section class="tab-panel js__tab-panel" id="menu-tab-2">
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card personal-area-card__inactively">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__notification">
+                  <div class="personal-area-status__suspended icon-stop personal-area-status__box">Приостановлено</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Возобновить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card personal-area-card__inactively">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__notification">
+                  <div class="personal-area-status__suspended icon-stop personal-area-status__box">Приостановлено</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Возобновить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card personal-area-card__inactively">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__notification">
+                  <div class="personal-area-status__suspended icon-stop personal-area-status__box">Приостановлено</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Возобновить</li>
+                      <li class="dropdown-item">Добавить в архив</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+          </section>
+
+          <section class="tab-panel js__tab-panel" id="menu-tab-3">
+            <!-- BEGIN: personal-area-card -->
+            <div class="personal-area-card personal-area-card__inactively">
+              <div class="personal-area-card__row">
+                <div class="personal-area-card__avatar">
+                  <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                  <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+                </div>
+
+                <div class="personal-area-card__notification">
+                  <div class="personal-area-status__suspended icon-stop personal-area-status__box">В архиве</div>
+                </div>
+
+                <div class="personal-area-card__control personal-area-card__row">
+                  <div class="dropdown js__dropdown">
+                    <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                    <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                      <li class="dropdown-item">Возобновить</li>
+                      <li class="dropdown-item">Удалить</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__middle">
+                <h3 class="personal-area-card__title">
+                  Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом
+                </h3>
+              </div>
+
+              <div class="personal-area-card__row personal-area-card__footer">
+                <div class="personal-area-card__label">
+                  Код: <span class="personal-area-card__label-text">45321</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+                </div>
+
+                <div class="personal-area-card__label">
+                  Адресов проведения: <span class="personal-area-card__label-text">4</span>
+                </div>
+
+                <a href="lk-vend-EVENTS-desk-03.html" class="mt-auto personal-area__items-edit icon-pen">Редактировать</a>
+              </div>
+            </div>
+            <!-- END: personal-area-card -->
+          </section>
+        </div>
+      </div>
+
+      <div class="mt-5 offset-xl-2 col-xl-6">
+        <img src="img/media/question.svg" alt="">
+      </div>
+      <div class="mt-5 col-xl-4">
+        <div class="personal-area-box">
+          {% include 'desktop-table/lk-support.twig' %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

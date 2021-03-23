@@ -1,0 +1,31 @@
+{% extends "layout/layout.twig" %}
+{% set title = "404 ошибка - fun2day" %}
+{% set breadcrumbCurrent = "Мастер класс по приготовлению чая" %}
+{% block topPanel %}{% include 'desktop-table/top-panel.twig' %}{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="service-page">
+  <div class="container">
+    <h1 class="service-page-title">Упс, кажется ты заблудился?</h1>
+    <div class="service-page__number">404</div>
+    <a href="/" class="btn-primary btn"><span class="btn-text">На главную</span></a>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

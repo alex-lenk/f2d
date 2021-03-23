@@ -1,0 +1,85 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Мои мероприятия - пустые списки" %}
+{% set versionDevice = "-mobile" %}
+  {% set online = "true" %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <div class="col-xl-6 col-md-9">
+      <h1 class="personal-area-title">Мои мероприятия</h1>
+
+      <div class="js__tabs">
+        <ul class="personal-area-tabs__list nav-tabs js__tabs-list">
+          <li class="nav-tabs__item js__tab-nav active">
+            <div class="nav-tabs__text">Активные</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Приостановленные</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Архив</div>
+          </li>
+        </ul>
+
+        <div class="tab-panel js__tab-panel active">
+          <div class="personal-area-jumbotron mb-5">
+            <h3 class="mb-2">Добавьте мероприятие</h3>
+
+            <div>И заполните всю необходимую информацию, что бы ваши клиенты легко вас находили.</div>
+          </div>
+        </div>
+
+        <div class="tab-panel js__tab-panel">
+          <div class="personal-area-jumbotron mb-5">
+            <h3 class="mb-2">Приостановленные мероприятия</h3>
+
+            <div>Список пуст. Однако, вы можете их создать, нажав на кнопку в правой части сайта.</div>
+          </div>
+        </div>
+
+        <div class="tab-panel js__tab-panel">
+          <div class="personal-area-jumbotron mb-5">
+            <h3 class="mb-2">Архив мероприятий</h3>
+
+            <div>В архиве ничего нет.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 col-xl-4">
+      <div class="personal-area-box mb-4">
+        {% include 'desktop-table/lk-support.twig' %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="floating-panel">
+  <a href="Добавления-мероприятия-(1-и-2)-desk.html" class="btn-primary btn">
+    <span class="btn-text">Создать мероприятие</span>
+  </a>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

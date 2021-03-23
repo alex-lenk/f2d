@@ -1,0 +1,32 @@
+.control-arrow {
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.control-arrow__next {
+  right: -12px;
+}
+
+.control-arrow__prev {
+  left: -12px;
+}
+
+@media (min-width: 576px) {
+  .control-arrow {
+    margin-top: -28px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .control-arrow {
+    margin-top: -17px;
+  }
+}

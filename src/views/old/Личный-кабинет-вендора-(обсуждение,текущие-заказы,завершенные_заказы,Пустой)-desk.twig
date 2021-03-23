@@ -1,0 +1,572 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Личный кабинет вендора - fun2day" %}
+{% block topPanel %}
+  {% set online = "true" %}
+  {% include 'desktop-table/top-panel.twig' %}
+{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <!-- BEGIN personal-area-aside -->
+    {% include 'partials/personal-area-aside.twig' %}
+    <!-- END personal-area-aside -->
+
+    <div class="col-xl-10 col-md-9">
+      <h1 class="personal-area-title">Все обращения</h1>
+
+      <div class="js__tabs">
+        <ul class="personal-area-tabs__list nav-tabs js__tabs-list">
+          <li class="nav-tabs__item js__tab-nav active">
+            <div class="nav-tabs__text">Обсуждение</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <span class="personal-area-notification icon-notification" data-note-count="2"></span>
+            <div class="nav-tabs__text">Текущие заказы</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Завершённые заказы</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Архив</div>
+          </li>
+        </ul>
+
+        <section class="tab-panel js__tab-panel active">
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__order icon-member personal-area-status__box">Новый статус</div>
+                <div class="personal-area-status__order icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__gift icon-gift"></div>
+
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного
+                  в горах Индии ручным способом Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-order">Оплачено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__note icon-question personal-area-status__box">Новый статус</div>
+                <div class="personal-area-status__note icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-note">Вопрос</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__order icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-order">Оплачено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__gift icon-gift"></div>
+
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-success">Выполнено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-suspended">Отмена</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__confirmed icon-confirmed personal-area-status__box">Новый статус</div>
+                <div class="personal-area-status__confirmed icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__gift icon-gift"></div>
+
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-confirmed">Подтверждено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__success icon-rub personal-area-status__box">Новый статус</div>
+                <div class="personal-area-status__success icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__gift icon-gift"></div>
+
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-success">Оплачено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__success icon-check-circle personal-area-status__box">Новый статус</div>
+                <div class="personal-area-status__success icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__gift icon-gift"></div>
+
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-success">Выполнено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+
+          <!-- BEGIN: personal-area-card -->
+          <div class="personal-area-card">
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__avatar">
+                <div class="personal-area-card__media"><img src="img/example/avatar-01.jpg" alt=""></div>
+                <div class="personal-area-card__name">OOO Чай с Индийской горы</div>
+              </div>
+
+              <div class="personal-area-card__notification">
+                <div class="personal-area-status__suspended icon-cancel personal-area-status__box">Новый статус</div>
+                <div class="personal-area-status__suspended icon-chat personal-area-status__box">Новое сообщение</div>
+              </div>
+
+              <div class="personal-area-card__control personal-area-card__row">
+                <div class="personal-area-card__gift icon-gift"></div>
+
+                <div class="personal-area-card__control-id mx-auto">ID 345123</div>
+
+                <div class="dropdown js__dropdown">
+                  <div class="dropdown-toggle js__dropdown-toggle icon-menu-circle"></div>
+
+                  <ul class="dropdown-menu dropdown-menu__right list-unstyled">
+                    <li class="dropdown-item">Приостановить</li>
+                    <li class="dropdown-item">Добавить в архив</li>
+                    <li class="dropdown-item">Удалить</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area-card__row personal-area-card__middle">
+              <h3 class="personal-area-card__title">
+                <a href="#" class="personal-area-card__title-link">Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом</a>
+              </h3>
+
+              <div class="personal-area-badge badge badge-suspended">Отменено</div>
+            </div>
+
+            <div class="personal-area-card__row">
+              <div class="personal-area-card__label">
+                Формат: <span class="personal-area-card__label-text">индивидуальное</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Понедельник <span class="personal-area-card__label-text">30 апреля в 10:00</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Билетов: <span class="personal-area-card__label-text">2</span>
+              </div>
+
+              <div class="personal-area-card__label">
+                Сумма: <span class="personal-area-card__label-text">5 000 ₽</span>
+              </div>
+            </div>
+          </div>
+          <!-- END: personal-area-card -->
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На&nbsp;данный момент у&nbsp;вас нет заказов в&nbsp;архиве</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

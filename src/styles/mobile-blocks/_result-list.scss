@@ -1,0 +1,48 @@
+.result-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  color: $black;
+  display: flex;
+  align-items: center;
+
+  &::before,
+  &::after {
+    width: 100%;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    background: $blue-gradient;
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+    opacity: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:first-of-type::before {
+    opacity: 1;
+  }
+}
+
+.result-img {
+  margin-right: 30px;
+  border-radius: 5px;
+  flex-shrink: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.result-text {
+  font-size: 13px;
+  line-height: 18px;
+  flex-grow: 1;
+}
+
+.result-all {
+  text-align: center;
+}

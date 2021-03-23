@@ -1,0 +1,37 @@
+.rating-progress {
+  width: 112px;
+  height: 20px;
+  display: block;
+  position: relative;
+  background: url(../img/icons/star-line.svg) no-repeat left center;
+  background-size: 112px 20px;
+
+  &::before {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background: url(../img/icons/star-line-full.svg) no-repeat left center;
+    background-size: 112px 20px;
+    content: '';
+  }
+
+  &[data-rating-progress="1"]::before {
+    width: 20%;
+  }
+
+  &[data-rating-progress="2"]::before {
+    width: 40%;
+  }
+
+  &[data-rating-progress="3"]::before {
+    width: 60%;
+  }
+
+  &[data-rating-progress="4"]::before {
+    width: 80%;
+  }
+
+  &[data-rating-progress="5"]::before {
+    width: 100%;
+  }
+}

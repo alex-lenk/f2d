@@ -1,0 +1,35 @@
+.header {
+  z-index: 50;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, 0.3);
+}
+
+.header-holder {
+  height: 70px;
+  align-items: center;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+.header-user {
+  height: 100%;
+}
+
+.header-fixed {
+  width: 100%;
+  background-color: $grey4;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1200px) {
+  .menu,
+  .header {
+    display: none;
+  }
+}

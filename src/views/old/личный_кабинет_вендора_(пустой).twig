@@ -1,0 +1,78 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Личный кабинет вендора (пустой) - fun2day" %}
+{% block topPanel %}
+  {% set online = "true" %}
+  {% include 'desktop-table/top-panel.twig' %}
+{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <!-- BEGIN personal-area-aside -->
+    {% include 'partials/personal-area-aside.twig' %}
+    <!-- END personal-area-aside -->
+
+    <div class="col-xl-10 col-md-9">
+      <h1 class="personal-area-title">Все обращения</h1>
+
+      <div class="js__tabs">
+        <ul class="nav-tabs js__tabs-list">
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Обсуждение</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Текущие заказы</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav active">
+            <div class="nav-tabs__text">Завершённые заказы</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Архив</div>
+          </li>
+        </ul>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На данный момент у вас нет активных обсуждений</div>
+          </div>
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На данный момент у вас нет заказов</div>
+          </div>
+        </section>
+
+        <section class="tab-panel js__tab-panel active">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На данный момент у вас нет завершенных заказов</div>
+          </div>
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На&nbsp;данный момент у&nbsp;вас нет заказов в&nbsp;архиве</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

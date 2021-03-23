@@ -1,0 +1,38 @@
+.filter-panel {
+  margin: 0 -7px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  order: 1;
+}
+
+.filter-panel__count {
+  width: 100%;
+  margin-bottom: 27px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 14px;
+}
+
+.filter-panel__box {
+  padding-left: 7px;
+  padding-right: 7px;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.filter-panel__choose {
+  height: 40px;
+  color: $black;
+  background: $grey-gradient;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 4px #C7C9D2, -2px -2px 4px #FAFBFF;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    margin-right: 5px;
+    margin-top: -1px;
+  }
+}

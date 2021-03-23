@@ -1,0 +1,76 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Личный кабинет вендора (пустой) - fun2day" %}
+{% set versionDevice = "-mobile" %}
+{% set online = "true" %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <div class="col-xl-10 col-md-9">
+      <h1 class="personal-area-title">Все обращения</h1>
+
+      <div class="js__tabs">
+        <ul class="personal-area-tabs__list nav-tabs js__tabs-list">
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Обсуждение</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Текущие заказы</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav active">
+            <div class="nav-tabs__text">Завершённые заказы</div>
+          </li>
+          <li class="nav-tabs__item js__tab-nav">
+            <div class="nav-tabs__text">Архив</div>
+          </li>
+        </ul>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На&nbsp;данный момент у&nbsp;вас нет активных обсуждений</div>
+          </div>
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На&nbsp;данный момент у&nbsp;вас нет заказов</div>
+          </div>
+        </section>
+
+        <section class="tab-panel js__tab-panel active">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На&nbsp;данный момент у&nbsp;вас нет завершенных заказов</div>
+          </div>
+        </section>
+
+        <section class="tab-panel js__tab-panel">
+          <div class="personal-area-support__empty">
+            <div class="personal-area-support__empty-text">На&nbsp;данный момент у&nbsp;вас нет заказов в&nbsp;архиве</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

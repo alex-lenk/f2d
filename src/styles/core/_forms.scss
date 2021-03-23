@@ -1,0 +1,212 @@
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+.hide-placeholder {
+  @include hidePlaceholder {
+    opacity: 1;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    transition: opacity .2s ease-in-out;
+  }
+
+  &:focus {
+    @include hidePlaceholder {
+      opacity: 0;
+      transition: opacity .2s ease-in-out;
+    }
+  }
+}
+
+.form-control {
+  background: $grey-gradient;
+  box-shadow: inset 3px 3px 10px rgba(56, 72, 114, 0.25), inset -3px -3px 10px #fff;
+
+  &:focus {
+    box-shadow: inset 3px 3px 10px rgba(56, 72, 114, 0.25), inset -3px -3px 10px #fff;
+  }
+}
+
+.form-control__prepend {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
+
+  .form-control {
+    padding-left: 40px;
+  }
+}
+
+.form-control__prepend-decor {
+  position: absolute;
+  left: 27px;
+  top: 12px;
+  font-size: 14px;
+}
+
+.form-control__textarea {
+  height: 120px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  min-height: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.form-control__numbers {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: $grey4;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset -3px -3px 10px #fff, inset 3px 3px 10px rgba(56, 72, 114, 0.25);
+  border-radius: 7px;
+
+  &:focus {
+    border-color: $blue;
+    outline: none;
+  }
+}
+
+.form-control__numbers-label {
+  color: $black;
+}
+
+.form-control__numbers-text {
+  font-size: 14px;
+}
+
+.form-control__time {
+  width: 64px;
+  height: 30px;
+  margin-right: 14px;
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(154.89deg, #EEEFF4 0%, #F6F7FC 100%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset -3px -3px 10px #FFFFFF, inset 3px 3px 10px rgba(56, 72, 114, 0.25);
+  border-radius: 7px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+/* Validation form */
+.error {
+  &.form-control {
+    border: 1px solid $red !important;
+  }
+
+  + label {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    color: $red;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-control-input + label {
+    width: 100%;
+    position: static;
+    order: 1;
+    margin-top: 14px;
+  }
+}
+
+.form-label {
+  padding-left: 6px;
+  margin-bottom: 10px;
+  color: $black;
+}
+
+select {
+  height: 44px;
+  display: block;
+  padding: .8em 2.5em .9em 1.3em;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  line-height: 1;
+  appearance: none;
+  border-radius: 50px;
+  color: #727272;
+  background: linear-gradient(135deg, #eeeff4 0%, #f6f7fc 100%);
+  background-image: url('../img/icons/arrow-down.svg'), linear-gradient(135deg, #eeeff4 0%, #f6f7fc 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 1.1em top 50%, 0 0;
+  background-size: .95em auto, 100%;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  option {
+    font-weight: normal;
+  }
+}
+
+*[dir="rtl"] select,
+:root:lang(ar) select,
+:root:lang(iw) select {
+  background-position: left .7em top 50%, 0 0;
+  padding: .6em .8em .5em 1.4em;
+}
+
+@media (min-width: 1100px) {
+  select:hover {
+    border-color: #888;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .form-control {
+    height: calc(1.5em + 1.44rem);
+    padding: .72rem 1.2rem;
+  }
+  select {
+    border: 0;
+    box-shadow: 2px 2px 4px #C7C9D2, -2px -2px 4px #FAFBFF;
+  }
+
+  .form-tip {
+    padding-top: 10px;
+    font-size: 14px
+  }
+}
+
+@media (max-width: 575px) {
+  select {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: -1px -1px 2px #FAFBFF, 1px 1px 2px #C7C9D2;
+  }
+
+  .form-tip {
+    padding-top:5px;
+    font-size: 13px;
+  }
+}

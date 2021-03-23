@@ -1,0 +1,1091 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Добавление мероприятия - fun2day" %}
+{% set versionDevice = "-mobile" %}
+{% set customScripts = "<script src='/js/events.js'></script>" %}
+{% block mobHeader %}
+  {% set online = "true" %}
+  {% include 'mobile/header.twig' %}
+{% endblock %}
+{% block content %}
+<div class="personal-area container">
+  <div class="row">
+    <div class="col-xl-10 col-md-9">
+      <h1 class="personal-area-title">Добавление мероприятия</h1>
+
+      <form class="personal-area-holder">
+        <div class="col-inner-1">
+          <!-- BEGIN: О мероприятии -->
+          <fieldset class="mb-4">
+            <h2>О мероприятии</h2>
+
+            <div class="form-group">
+              <label class="form-label" for="field-01">Название мероприятия</label>
+              <input type="text" id="field-01" class="form-control hide-placeholder" placeholder="Напишите название" value="Мастер класс по приготовлению зелёного чая собранного в горах Индии ручным способом">
+            </div>
+
+            <div>
+              <label class="form-label" for="field-02">Описание мероприятия</label>
+              <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Кратко опишите мероприятие">
+Сходящийся ряд охватывает тригонометрический график функции многих переменных. Надо сказать, что достаточно сходимости.
+            </textarea>
+              <div class="form-tip">не более 200 символов без пробелов</div>
+            </div>
+          </fieldset>
+          <!-- END: О мероприятии -->
+        </div>
+
+
+        <!-- BEGIN: Загрузить фото -->
+        <fieldset class="mb-5">
+          <div class="personal-area-download mb-4">
+            <div class="personal-area-download__media">
+              <img src="img/example/upload-01.jpg" alt="">
+            </div>
+            <input type="file" class="personal-area-avatar__field js__multi-upload" multiple accept=".jpeg, .jpg, .png">
+            <div>
+              <div class="personal-area-download__text">
+                <span class="as-link">Загрузить фотографии</span> не более 20 фото
+              </div>
+              <div class="personal-area-download__text">фото должны быть не более 10 Mb, в формате, PNG, JPEG, JPG</div>
+            </div>
+          </div>
+
+          <ul class="personal-area-download__list list-unstyled mb-5">
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-01.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-02.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-03.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-04.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-05.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-06.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-07.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-08.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-09.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-10.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-11.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-12.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-13.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-14.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-15.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-16.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-17.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-18.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+            <li class="personal-area-download__list-item">
+              <div class="personal-area-directions__close icon-close"></div>
+              <img src="img/example/upload-19.jpg" class="personal-area-download__list-img" alt="">
+            </li>
+          </ul>
+
+          <div class="mb-4">
+            <label class="form-label">Укажите тип и возрастные ограничения для мероприятия</label>
+            <div class="row">
+              <div class="personal-area-column col-12">
+                <select>
+                  <option>Выбрать тип</option>
+                  <option>Детское</option>
+                  <option selected>Молодежное</option>
+                  <option>Взрослое</option>
+                  <option>Супер взрослое</option>
+                  <option>Семейное</option>
+                </select>
+              </div>
+              <div class="personal-area-column col-12">
+                <select>
+                  <option>Возраст</option>
+                  <option>0+</option>
+                  <option>6+</option>
+                  <option>12+</option>
+                  <option selected>16+</option>
+                  <option>18+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label" for="field-05">Опишите детали и особенности мероприятия</label>
+            <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Описание деталей">
+Политическое учение Платона ограничивает постиндустриализм. Институциализация символизирует идеологический тоталитарный тип
+политической культуры. В таких странах, как Мексика и Венесуэла, идеология неоднозначна. Глобализация, как бы это ни казалось
+парадоксальным, однозначно определяет доиндустриальный тип политической культуры.
+          </textarea>
+            <div class="form-tip">не более 1 000 символов без пробелов</div>
+          </div>
+        </fieldset>
+        <!-- END: Загрузить фото -->
+
+
+        <!-- BEGIN: Бронирование -->
+        <fieldset class="mb-5">
+          <legend class="h2">Детали бронирования</legend>
+
+          <div class="mb-4">
+            <label class="form-label" for="field-08">Укажите за какой максимальный срок можно бронировать</label>
+
+            <div class="personal-area-column">
+              <select>
+                <option>Выбрать</option>
+                <option>за 1 месяц</option>
+                <option selected>за 1 неделю</option>
+                <option>за 1 день</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-label">Укажите можно ли отменять бронирование на этом мероприятии</div>
+
+          <div class="personal-area__check-group mb-4">
+            <div class="personal-area__check-group--block">
+              <label class="modal-form__group-item custom-control custom-radio">
+                <input type="radio" name="radio3" class="custom-control-input" checked>
+                <span class="custom-control-label">Можно отменить бронирование</span>
+              </label>
+            </div>
+            <div class="personal-area__check-group--block">
+              <label class="modal-form__group-item custom-control custom-radio">
+                <input type="radio" name="radio3" class="custom-control-input">
+                <span class="custom-control-label">Нельзя отменить бронирование</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label">Опишите условия отмены бронирования</label>
+            <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Описание условий отмены бронирования">
+Политическое учение Платона ограничивает постиндустриализм. Институциализация символизирует идеологический тоталитарный тип
+политической культуры. В таких странах, как Мексика и Венесуэла, идеология неоднозначна. Глобализация, как бы это ни казалось
+парадоксальным, однозначно определяет доиндустриальный тип политической культуры.
+          </textarea>
+          </div>
+        </fieldset>
+        <!-- END: Бронирование -->
+
+
+        <!-- BEGIN: Формат мероприятия -->
+        <fieldset class="mb-5">
+          <legend class="h2">Формат мероприятия</legend>
+
+          <div class="form-label">Укажите формат мероприятия</div>
+
+          <div class="personal-area__check-group">
+            <div class="personal-area__check-group--block">
+              <label class="modal-form__group-item custom-control custom-radio">
+                <input type="radio" name="event-format" class="custom-control-input js__personal-area__event" checked data-get-group-time>
+                <span class="custom-control-label">Групповое (мероприятие по расписанию)</span>
+              </label>
+            </div>
+            <div class="personal-area__check-group--block">
+              <label class="modal-form__group-item custom-control custom-radio">
+                <input type="radio" name="event-format" class="custom-control-input js__personal-area__event" data-get-individual-time>
+                <span class="custom-control-label">Индивидуальное (мероприятие на заказ)</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- END: Формат мероприятия -->
+
+
+        <div class="personal-area__events-info d-none">
+          <!-- BEGIN: Категория мероприятия -->
+          <div class="mb-5">
+            <div class="h2">Категория мероприятия</div>
+
+            <p>Добавьте ваше мероприятие в существующую структуру каталога</p>
+
+            <div class="personal-area__items">
+              <div class="personal-area__events-category col-xl-4 offset-xl-1">
+                <a href="#" class="mb-1 h3">Творчество</a>
+                <ul class="list-circle">
+                  <li class="list-circle-item">
+                    <a href="#" class="list-circle-link">Живопись</a>
+                    <ul class="list-unstyled">
+                      <li> Мастер класс по приготовлению чая </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="personal-area__events-category col-xl-4 offset-xl-1">
+                <a href="#" class="mb-1 h3">Музыка</a>
+                <ul class="list-circle">
+                  <li class="list-circle-item">
+                    <a href="#" class="list-circle-link">Рок</a>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="list-circle-link">Мастер класс игры на электро гитаре</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="personal-area__items-edit icon-pen" data-toggle="modal" data-target="#modal-add-event">Редактировать</div>
+            </div>
+          </div>
+          <!-- END: Категория мероприятия -->
+
+
+          <!-- BEGIN: Бренд -->
+          <fieldset class="mb-5">
+            <legend class="h2">Бренд мероприятия</legend>
+            <div class="personal-area-column">
+              <select>
+                <option>Fun2Day</option>
+                <option>fun2day</option>
+                <option>Чай с горы</option>
+              </select>
+            </div>
+          </fieldset>
+          <!-- END: Бренд -->
+
+
+          <!-- BEGIN: Адрес мероприятия -->
+          <fieldset class="mb-4">
+            <legend class="h2">Адреса проведения</legend>
+
+            <div class="personal-area-lead mb-2">Добавьте филиал в&nbsp;котором будет проходить ваше мероприятие</div>
+
+
+            <div class="personal-area__items mb-4">
+              <div class="row">
+                <div class="col-11 mb-3 personal-area__items-text">Москва, Мичуринский проспект 33 к1</div>
+                <div class="ml-auto pr-3 personal-area-card__gift icon-gift"></div>
+
+                <div class="col-12 personal-area-card__row">
+                  <div class="personal-area-card__label">
+                    Время проведения: <span class="personal-area-card__label-text">1 день 10 часов 15 минут</span>
+                  </div>
+                  <div class="personal-area-card__label">
+                    Количество человек: <span class="personal-area-card__label-text">До 10</span>
+                  </div>
+                  <div class="personal-area-card__label">
+                    Цена: <span class="personal-area-card__label-text"><del>1 000 ₽</del> 500 ₽</span>
+                  </div>
+                  <div class="personal-area__items-edit icon-pen" data-toggle="modal" data-target="#editAddressEvents">
+                    Редактировать
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area__items mb-4">
+              <div class="row">
+                <div class="col-11 mb-3 personal-area__items-text">Москва, Мичуринский проспект 33 к1</div>
+                <div class="ml-auto pr-3 personal-area-card__gift icon-gift"></div>
+
+                <div class="col-12 personal-area-card__row">
+                  <div class="personal-area-card__label">
+                    Время проведения: <span class="personal-area-card__label-text">1 день 10 часов 15 минут</span>
+                  </div>
+                  <div class="personal-area-card__label">
+                    Количество человек: <span class="personal-area-card__label-text">До 10</span>
+                  </div>
+                  <div class="personal-area-card__label">
+                    Цена: <span class="personal-area-card__label-text"><del>1 000 ₽</del> 500 ₽</span>
+                  </div>
+                  <div class="personal-area__items-edit icon-pen" data-toggle="modal" data-target="#editAddressEvents">
+                    Редактировать
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area__items mb-4">
+              <div class="row">
+                <div class="col-11 mb-3 personal-area__items-text">Москва, Мичуринский проспект 33 к1</div>
+                <div class="ml-auto pr-3 personal-area-card__gift icon-gift"></div>
+
+                <div class="col-12 personal-area-card__row">
+                  <div class="personal-area-card__label">
+                    Время проведения: <span class="personal-area-card__label-text">1 день 10 часов 15 минут</span>
+                  </div>
+                  <div class="personal-area-card__label">
+                    Количество человек: <span class="personal-area-card__label-text">До 10</span>
+                  </div>
+                  <div class="personal-area-card__label">
+                    Цена: <span class="personal-area-card__label-text"><del>1 000 ₽</del> 500 ₽</span>
+                  </div>
+                  <div class="personal-area__items-edit icon-pen" data-toggle="modal" data-target="#editAddressEvents">
+                    Редактировать
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-area__add mb-4 icon-plus as-link" data-toggle="modal" data-target="#addAddressEvents">
+              Добавить адрес проведения (филиал)
+            </div>
+          </fieldset>
+          <!-- END: Адрес мероприятия -->
+        </div>
+
+
+        <div class="personal-area__control">
+          <div class="row justify-content-center">
+            <div class="personal-area__control-box">
+              <a href="Добавления-мероприятия-(1-и-2)-desk.html" class="btn-primary btn"><span class="btn-text">Создать мероприятие</span></a>
+            </div>
+            <div class="personal-area__control-box mt-3">
+              <button class="btn-secondary btn"><span class="btn-text">Предпросмотр</span></button>
+            </div>
+            <div class="personal-area__control-box align-self-center">
+              <button class="personal-area__control-reset btn">Удалить мероприятие</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- BEGIN: addAddressEvents -->
+<div class="modal fade" id="addAddressEvents" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-address-events">
+    <!-- BEGIN form event address -->
+    <form action="/" class="modal-content">
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+
+      <div class="mb-4">
+        <label class="h2 mb-3">Выберите адрес проведения мероприятия</label>
+        <div class="row">
+          <div class="col-8">
+            <select>
+              <option>г. Москва, Мичуринский проспект 32 к4</option>
+              <option>г. Владивосток, Мичуринский проспект 32 к4</option>
+              <option>г. Ростов на Дону, Мичуринский проспект 32 к4</option>
+              <option>г. Уфа, Мичуринский проспект 32 к4</option>
+              <option>г. Оренбург, Мичуринский проспект 32 к4</option>
+              <option>МО, г. Одинцово, Мичуринский проспект 32 к4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="personal-area__calendar calendar-picker calendar-picker-id-1" data-id="calendar-picker-id-1">
+          <h2 class="detail-calendar__title">Выберите дату, когда будет проходить мероприятие</h2>
+
+          <div class="datepicker"></div>
+
+          <input type="hidden" class="settings_holder" name="settings" value='{"2020-08-04":{"time":"10:00","repeat":1}}'>
+          <input type="hidden" class="dates_holder" name="dates" value='{"2020-08-04":{"time":"10:00","repeat":1,"start":"2020-08-04"},"2020-08-11":{"time":"10:00","repeat":1,"start":"2020-08-04"},"2020-08-18":{"time":"10:00","repeat":1,"start":"2020-08-04"},"2020-08-25":{"time":"10:00","repeat":1,"start":"2020-08-04"}}'>
+
+          <!-- BEGIN: event-inner-modal -->
+          <div class="event-inner-modal">
+            <h3>Настройка даты и времени</h3>
+
+            <div class="mb-4">
+              <label class="form-label">Дата</label>
+              <div class="personal-area__field-short">
+                <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="09.09.2020">
+              </div>
+            </div>
+
+            <div class="mb-4 d-none" data-group-time>
+              <label class="form-label">Время начала</label>
+
+              <div class="personal-area__time-group">
+                <input type="text" class="form-control__time js__hr-mn" placeholder="__:__" data-event-group__timer>
+
+                <div class="personal-area__add-small personal-area__add icon-plus as-link" data-event-group__add-timer>Добавить время</div>
+              </div>
+            </div>
+
+            <div class="mb-4 d-none" data-individual-time>
+              <label class="form-label">Время</label>
+
+              <div class="event-timer-list">
+                <div class="event-timer-item personal-area__field-short mb-2">
+                  <div class="form-control__prepend">
+                    <div class="form-control__prepend-decor">От</div>
+                    <input type="text" class="form-control hide-placeholder js__hr-mn" placeholder="12:00">
+                  </div>
+                  <span>-</span>
+                  <div class="form-control__prepend">
+                    <div class="form-control__prepend-decor">До</div>
+                    <input type="text" class="form-control hide-placeholder js__hr-mn" placeholder="13:00">
+                  </div>
+                  <span class="event-timer-item__close icon-close"></span>
+                </div>
+              </div>
+
+              <div class="personal-area__add-small personal-area__add icon-plus as-link" data-js__even-timer-add>Добавить временной интервал</div>
+            </div>
+
+            <div class="personal-area-column mb-4">
+              <select class="js__select-repeat">
+                <option value="0">Не повторять</option>
+                <option value="1">Повторять по дням</option>
+                <option value="2">Повторять по неделям</option>
+              </select>
+            </div>
+
+            <div class="repeat-week d-none">
+              <div class="week-checkbox mb-3">
+                <label class="modal-form__group-item custom-control custom-radio mr-3">
+                  <input type="radio" name="radio4" class="custom-control-input" checked>
+                  <span class="custom-control-label">Каждую</span>
+                </label>
+
+                <input type="text" class="form-control__numbers mr-2" placeholder="1" value="1">
+
+                <div class="form-control__numbers-label mr-2">неделю</div>
+
+                <span class="form-control__numbers-text">(повторять неделю)</span>
+              </div>
+
+              <div class="week-checkbox mb-3">
+                <label class="week-checkbox__day">
+                  <span>Пн</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Вт</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" checked>
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Ср</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Чт</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Пт</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Сб</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Вс</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+              </div>
+
+              <div class="personal-area__field-short mb-4">
+                <div class="personal-area__field-text">Повторять до</div>
+                <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+              </div>
+            </div>
+
+            <div class="repeat-day d-none">
+              <div class="week-checkbox mb-3">
+                <label class="modal-form__group-item custom-control custom-radio mr-3">
+                  <input type="radio" name="radio3" class="custom-control-input" checked>
+                  <span class="custom-control-label">Каждый</span>
+                </label>
+
+                <input type="text" class="form-control__numbers mr-2" placeholder="1" value="1">
+
+                <div class="form-control__numbers-label mr-2">день</div>
+
+                <span class="form-control__numbers-text">(повторять ежедневно)</span>
+              </div>
+
+              <div class="week-checkbox mb-3">
+                <label class="modal-form__group-item custom-control custom-radio mr-3">
+                  <input type="radio" name="radio3" class="custom-control-input">
+                  <span class="custom-control-label">Каждый рабочий день</span>
+                </label>
+              </div>
+
+              <div class="personal-area__field-short mb-4">
+                <div class="personal-area__field-text">Повторять до</div>
+                <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+              </div>
+            </div>
+
+            <button class="btn-primary btn"><span class="btn-text">Применить</span></button>
+
+            <div class="event-inner-modal__close js__event-inner-modal btn-circle btn-circle__small icon-close"></div>
+          </div>
+          <!-- END: event-inner-modal -->
+        </div>
+      </div>
+
+
+      <fieldset class="mb-4">
+        <legend class="h2">Информация о филиале</legend>
+
+        <div class="mb-4">
+          <label class="form-label">Укажите длительность мероприятия</label>
+          <div class="personal-area__field-short">
+            <input type="text" class="form-control hide-placeholder js__num" placeholder="Дней">
+            <span>-</span>
+            <input type="text" class="form-control hide-placeholder js__num" placeholder="Часов">
+            <span>-</span>
+            <input type="text" class="form-control hide-placeholder js__num" placeholder="Минут">
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label">Укажите максимальное количество человек на мероприятии</label>
+          <div class="personal-area__field-short">
+            <div class="form-control__prepend">
+              <div class="form-control__prepend-decor">От</div>
+              <input type="text" class="form-control js__num">
+            </div>
+            <span>-</span>
+            <div class="form-control__prepend">
+              <div class="form-control__prepend-decor">От</div>
+              <input type="text" class="form-control js__num">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- BEGIN: Детали оплаты -->
+      <fieldset class="mb-5">
+        <legend class="h2">Детали оплаты мероприятия</legend>
+
+        <div class="personal-area-column mb-4">
+          <label class="form-label" for="field-06">Укажите форму оплаты</label>
+          <select id="field-06">
+            <option>За человека</option>
+            <option>За мероприятие</option>
+          </select>
+        </div>
+
+        <label class="form-label">Установите сумму и валюту для оплаты мероприятия</label>
+
+        <div class="personal-area-price">
+          <div class="personal-area-price__item mb-3 align-items-center">
+            <div class="personal-area-field__short">
+              <input type="text" class="form-control hide-placeholder" placeholder="1 000 ₽">
+            </div>
+
+            <div class="personal-area-column col-12">
+              <select>
+                <option>Российский рубль</option>
+                <option>Доллар США</option>
+                <option>ЕВРО</option>
+                <option>Йена</option>
+                <option>Юань</option>
+                <option>Фунт Стерлинга</option>
+              </select>
+            </div>
+
+            <div class="personal-area-column col-12">
+              <select>
+                <option>Стандартный билет</option>
+                <option>Льготный</option>
+              </select>
+            </div>
+
+            <div class="personal-area-field__short">
+              <button type="button" class="btn" data-event-del-cost>Удалить цену</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-area__add icon-plus as-link">Добавить цену</div>
+      </fieldset>
+      <!-- END: Детали оплаты -->
+
+
+      <!-- BEGIN: Скидка -->
+      <fieldset class="mb-5">
+        <legend class="h2">Настройка скидки</legend>
+
+        <div class="form-label">Установите сумму или процент скидки на мероприятие</div>
+
+        <div class="personal-area-price__item mb-4">
+          <div class="personal-area-column col-12">
+            <select>
+              <option>Сумма</option>
+              <option>Процент</option>
+            </select>
+          </div>
+          <div class="personal-area-field__short">
+            <input type="text" class="form-control hide-placeholder" placeholder="1 000 ₽">
+          </div>
+        </div>
+
+        <div class="form-label">Укажите календарный период скидки</div>
+
+        <div class="personal-area__field-short">
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.05.2020">
+          <span>-</span>
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+        </div>
+      </fieldset>
+      <!-- END: Скидка -->
+
+
+      <!-- BEGIN: Акции подарки промо -->
+      <fieldset class="mb-4">
+        <legend class="h2">Акции, подарки, промо</legend>
+
+        <div class="form-group">
+          <label class="form-label" for="field-07">Опишите условия акции. Пример: “Каждый третий билет бесплатно”</label>
+          <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Описание условий акции"></textarea>
+        </div>
+
+        <div class="form-label">Укажите календарный период скидки </div>
+
+        <div class="personal-area__field-short">
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.05.2020">
+          <span>-</span>
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+        </div>
+      </fieldset>
+      <!-- END: Акции подарки промо -->
+
+
+      <div class="personal-area__control">
+        <div class="row">
+          <div class="personal-area__control-box">
+            <button class="btn-primary btn" data-dismiss="modal"><span class="btn-text">Сохранить</span></button>
+          </div>
+          <div class="personal-area__control-box align-self-center">
+            <button class="personal-area__control-reset btn">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- END form event address -->
+  </div>
+</div>
+<!-- END: addAddressEvents -->
+
+
+<!-- BEGIN: editAddressEvents -->
+<div class="modal fade" id="editAddressEvents" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-address-events">
+    <!-- BEGIN form event address -->
+    <form action="/" class="modal-content">
+      <div class="modal-close btn-circle btn-circle__small icon-close" data-dismiss="modal"></div>
+
+      <div class="mb-4">
+        <label class="h2 mb-3">Выберите адрес проведения мероприятия</label>
+        <div class="row">
+          <div class="col-8">
+            <select>
+              <option>г. Москва, Мичуринский проспект 32 к4</option>
+              <option>г. Владивосток, Мичуринский проспект 32 к4</option>
+              <option>г. Ростов на Дону, Мичуринский проспект 32 к4</option>
+              <option selected>г. Уфа, Мичуринский проспект 32 к4</option>
+              <option>г. Оренбург, Мичуринский проспект 32 к4</option>
+              <option>МО, г. Одинцово, Мичуринский проспект 32 к4</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="personal-area__calendar calendar-picker calendar-picker-id-1" data-id="calendar-picker-id-1">
+          <h2 class="detail-calendar__title">Выберите дату, когда будет проходить мероприятие</h2>
+
+          <div class="datepicker"></div>
+
+          <input type="hidden" class="settings_holder" name="settings" value='{"2020-08-04":{"time":"10:00","repeat":1}}'>
+          <input type="hidden" class="dates_holder" name="dates" value='{"2020-08-04":{"time":"10:00","repeat":1,"start":"2020-08-04"},"2020-08-11":{"time":"10:00","repeat":1,"start":"2020-08-04"},"2020-08-18":{"time":"10:00","repeat":1,"start":"2020-08-04"},"2020-08-25":{"time":"10:00","repeat":1,"start":"2020-08-04"}}'>
+
+          <!-- BEGIN: event-inner-modal -->
+          <div class="event-inner-modal">
+            <h3>Настройка даты и времени</h3>
+
+            <div class="mb-4">
+              <label class="form-label">Дата</label>
+              <div class="personal-area__field-short">
+                <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="09.09.2020" value="12.24.2020">
+              </div>
+            </div>
+
+            <div class="mb-4 d-none" data-group-time>
+              <label class="form-label">Время начала</label>
+
+              <div class="personal-area__time-group">
+                <input type="text" class="form-control__time js__hr-mn" placeholder="__:__" data-event-group__timer>
+
+                <div class="personal-area__add-small personal-area__add icon-plus as-link" data-event-group__add-timer>Добавить время</div>
+              </div>
+            </div>
+
+            <div class="mb-4 d-none" data-individual-time>
+              <label class="form-label">Время</label>
+
+              <div class="event-timer-list">
+                <div class="event-timer-item personal-area__field-short mb-2">
+                  <div class="form-control__prepend">
+                    <div class="form-control__prepend-decor">От</div>
+                    <input type="text" class="form-control hide-placeholder js__hr-mn" placeholder="12:00">
+                  </div>
+                  <span>-</span>
+                  <div class="form-control__prepend">
+                    <div class="form-control__prepend-decor">До</div>
+                    <input type="text" class="form-control hide-placeholder js__hr-mn" placeholder="13:00">
+                  </div>
+                  <span class="event-timer-item__close icon-close"></span>
+                </div>
+              </div>
+
+              <div class="personal-area__add-small personal-area__add icon-plus as-link" data-js__even-timer-add>Добавить временной интервал</div>
+            </div>
+
+            <div class="personal-area-column mb-4">
+              <select class="js__select-repeat">
+                <option value="0">Не повторять</option>
+                <option value="1">Повторять по дням</option>
+                <option value="2">Повторять по неделям</option>
+              </select>
+            </div>
+
+            <div class="repeat-week d-none">
+              <div class="week-checkbox mb-3">
+                <label class="modal-form__group-item custom-control custom-radio mr-3">
+                  <input type="radio" name="radio4" class="custom-control-input" checked>
+                  <span class="custom-control-label">Каждую</span>
+                </label>
+
+                <input type="text" class="form-control__numbers mr-2" placeholder="1" value="1">
+
+                <div class="form-control__numbers-label mr-2">неделю</div>
+
+                <span class="form-control__numbers-text">(повторять неделю)</span>
+              </div>
+
+              <div class="week-checkbox mb-3">
+                <label class="week-checkbox__day">
+                  <span>Пн</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Вт</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" checked>
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Ср</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Чт</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Пт</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Сб</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+
+                <label class="week-checkbox__day">
+                  <span>Вс</span>
+                  <span class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-label icon-check"></span>
+              </span>
+                </label>
+              </div>
+
+              <div class="personal-area__field-short mb-4">
+                <div class="personal-area__field-text">Повторять до</div>
+                <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+              </div>
+            </div>
+
+            <div class="repeat-day d-none">
+              <div class="week-checkbox mb-3">
+                <label class="modal-form__group-item custom-control custom-radio mr-3">
+                  <input type="radio" name="radio3" class="custom-control-input" checked>
+                  <span class="custom-control-label">Каждый</span>
+                </label>
+
+                <input type="text" class="form-control__numbers mr-2" placeholder="1" value="1">
+
+                <div class="form-control__numbers-label mr-2">день</div>
+
+                <span class="form-control__numbers-text">(повторять ежедневно)</span>
+              </div>
+
+              <div class="week-checkbox mb-3">
+                <label class="modal-form__group-item custom-control custom-radio mr-3">
+                  <input type="radio" name="radio3" class="custom-control-input">
+                  <span class="custom-control-label">Каждый рабочий день</span>
+                </label>
+              </div>
+
+              <div class="personal-area__field-short mb-4">
+                <div class="personal-area__field-text">Повторять до</div>
+                <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+              </div>
+            </div>
+
+            <button class="btn-primary btn"><span class="btn-text">Применить</span></button>
+
+            <div class="event-inner-modal__close js__event-inner-modal btn-circle btn-circle__small icon-close"></div>
+          </div>
+          <!-- END: event-inner-modal -->
+        </div>
+      </div>
+
+
+      <fieldset class="mb-4">
+        <legend class="h2">Информация о филиале</legend>
+
+        <div class="mb-4">
+          <label class="form-label">Укажите длительность мероприятия</label>
+          <div class="personal-area__field-short">
+            <input type="text" class="form-control hide-placeholder js__num" placeholder="Дней" value="1">
+            <span>-</span>
+            <input type="text" class="form-control hide-placeholder js__num" placeholder="Часов" value="0">
+            <span>-</span>
+            <input type="text" class="form-control hide-placeholder js__num" placeholder="Минут" value="0">
+          </div>
+        </div>
+
+        <div>
+          <label class="form-label">Укажите максимальное количество человек на мероприятии</label>
+          <div class="personal-area__field-short">
+            <div class="form-control__prepend">
+              <div class="form-control__prepend-decor">От</div>
+              <input type="text" class="form-control js__num" value="1">
+            </div>
+            <span>-</span>
+            <div class="form-control__prepend">
+              <div class="form-control__prepend-decor">От</div>
+              <input type="text" class="form-control js__num" value="30">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- BEGIN: Детали оплаты -->
+      <fieldset class="mb-5">
+        <legend class="h2">Детали оплаты мероприятия</legend>
+
+        <div class="personal-area-column mb-4">
+          <label class="form-label" for="field-06">Укажите форму оплаты</label>
+          <select id="field-06">
+            <option selected>За человека</option>
+            <option>За мероприятие</option>
+          </select>
+        </div>
+
+        <label class="form-label">Установите сумму и валюту для оплаты мероприятия</label>
+
+        <div class="personal-area-price">
+          <div class="personal-area-price__item mb-3 align-items-center">
+            <div class="personal-area-field__short">
+              <input type="text" class="form-control hide-placeholder" placeholder="1 000 ₽" value="100">
+            </div>
+
+            <div class="personal-area-column col-12">
+              <select>
+                <option>Российский рубль</option>
+                <option>Доллар США</option>
+                <option selected>ЕВРО</option>
+                <option>Йена</option>
+                <option>Юань</option>
+                <option>Фунт Стерлинга</option>
+              </select>
+            </div>
+
+            <div class="personal-area-column col-12">
+              <select>
+                <option selected>Стандартный билет</option>
+                <option>Льготный</option>
+              </select>
+            </div>
+
+            <div class="personal-area-field__short">
+              <button type="button" class="btn" data-event-del-cost>Удалить цену</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-area__add icon-plus as-link">Добавить цену</div>
+      </fieldset>
+      <!-- END: Детали оплаты -->
+
+
+      <!-- BEGIN: Скидка -->
+      <fieldset class="mb-5">
+        <legend class="h2">Настройка скидки</legend>
+
+        <div class="form-label">Установите сумму или процент скидки на мероприятие</div>
+
+        <div class="personal-area-price__item mb-4">
+          <div class="personal-area-column col-12">
+            <select>
+              <option>Сумма</option>
+              <option>Процент</option>
+            </select>
+          </div>
+          <div class="personal-area-field__short">
+            <input type="text" class="form-control hide-placeholder" placeholder="1 000 ₽">
+          </div>
+        </div>
+
+        <div class="form-label">Укажите календарный период скидки</div>
+
+        <div class="personal-area__field-short">
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.05.2020">
+          <span>-</span>
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+        </div>
+      </fieldset>
+      <!-- END: Скидка -->
+
+
+      <!-- BEGIN: Акции подарки промо -->
+      <fieldset class="mb-4">
+        <legend class="h2">Акции, подарки, промо</legend>
+
+        <div class="form-group">
+          <label class="form-label" for="field-07">Опишите условия акции. Пример: “Каждый третий билет бесплатно”</label>
+          <textarea class="form-control__textarea form-control hide-placeholder" placeholder="Описание условий акции"></textarea>
+        </div>
+
+        <div class="form-label">Укажите календарный период скидки </div>
+
+        <div class="personal-area__field-short">
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.05.2020">
+          <span>-</span>
+          <input type="text" class="form-control hide-placeholder js__dd-mm-yy" placeholder="12.06.2020">
+        </div>
+      </fieldset>
+      <!-- END: Акции подарки промо -->
+
+
+      <div class="personal-area__control">
+        <div class="row">
+          <div class="personal-area__control-box">
+            <button class="btn-primary btn" data-dismiss="modal"><span class="btn-text">Сохранить</span></button>
+          </div>
+          <div class="personal-area__control-box align-self-center">
+            <button class="personal-area__control-reset btn">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- END form event address -->
+  </div>
+</div>
+<!-- END: addAddressEvents -->
+{% endblock %}
+
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

@@ -1,0 +1,95 @@
+.card {
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 8px #C7C9D2, -2px -2px 6px #FAFBFF;
+  border-radius: 15px;
+  transition: box-shadow .2s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+    text-decoration: none;
+
+    .card-media__img {
+      opacity: .85;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.card-media {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-media__img {
+  object-fit: contain;
+  height: inherit;
+  transition: opacity .2s ease-in-out;
+}
+
+.card-body {
+  padding: 15px 15px 18px 20px;
+}
+
+.card-title {
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: $black;
+}
+
+.card-text {
+  min-height: 48px;
+  margin-bottom: 15px;
+  color: $grey;
+}
+
+.card-footer {
+  padding-right: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: $black;
+  letter-spacing: 0.03em;
+}
+
+@media (min-width: 1400px) {
+  .card-media {
+    height: 213px;
+  }
+  .card-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .card-text {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .card-media {
+    height: 169px;
+  }
+  .card-media__img {
+    object-fit: cover;
+  }
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card {
+    height: 100%
+  }
+}

@@ -1,0 +1,90 @@
+.nav-tabs {
+  padding-left: 0;
+  margin-left: -7px;
+  margin-right: -7px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  transition: opacity .2s ease-in-out;
+}
+
+.nav-tabs__item {
+  padding-right: 7px;
+  padding-left: 7px;
+  position: relative;
+
+  &.active {
+    color: $black;
+    transition: color .2s ease-in-out;
+
+    .nav-tabs__text {
+      background-blend-mode: soft-light, normal;
+      border-color: #E3E5EC;
+    }
+  }
+}
+
+.nav-tabs__item--half {
+  width: 50%;
+}
+
+.nav-tabs__text {
+  white-space: nowrap;
+  padding: 10px 20px;
+  background: $grey-gradient;
+  border: 2px solid rgba(#fff, 0.3);
+  transition: border-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.tab-panel {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav-tabs {
+    margin-bottom: 13px;
+    padding-left: 0;
+  }
+  .nav-tabs__item.active .nav-tabs__text {
+    background: linear-gradient(278.69deg, rgba(0, 0, 0, 0.6) 5.98%, rgba(255, 255, 255, 0) 97.09%), #E3E5EC;
+    box-shadow: 3px 3px 4px rgba(56, 72, 114, 0.2), -3px -3px 4px #FFFFFF, inset 3px 3px 4px rgba(56, 72, 114, 0.25), inset -3px -3px 4px #FFFFFF;
+  }
+  .nav-tabs__text {
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #C7C9D2, -1px -1px 2px #FAFBFF;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-tabs {
+    margin-bottom: 30px;
+  }
+  .nav-tabs__item:not(.active) {
+    cursor: pointer;
+
+    &:hover .nav-tabs__text {
+      border-color: transparent;
+      color: $black;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .nav-tabs__item {
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+    &.active .nav-tabs__text {
+      background: linear-gradient(272.12deg, rgba(0, 0, 0, 0.6) 5.98%, rgba(255, 255, 255, 0) 97.09%), #E3E5EC;
+      box-shadow: -3px -3px 4px #FFFFFF, 3px 3px 4px rgba(56, 72, 114, 0.2), inset -3px -3px 4px #FFFFFF, inset 3px 3px 4px rgba(56, 72, 114, 0.25);
+    }
+  }
+  .nav-tabs__text {
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px #FAFBFF, 1px 1px 2px #C7C9D2;
+  }
+}

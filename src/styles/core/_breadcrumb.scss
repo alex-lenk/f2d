@@ -1,0 +1,29 @@
+.breadcrumb-wrap {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item__current {
+  color: $black;
+}
+
+.breadcrumb-link {
+  color: inherit;
+
+  &::after {
+    width: 5px;
+    height: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: $grey;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+  }
+}

@@ -1,0 +1,37 @@
+@media (max-width: 1199px) {
+  .mini-card {
+    margin-left: rem(-7.5);
+    margin-right: rem(-7.5);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mini-card-item {
+    margin-bottom: 18px;
+    padding-left: rem(7.5);
+    padding-right: rem(7.5);
+  }
+  .mini-card-link {
+    font-size: 14px;
+    line-height: 20px;
+    color: $black;
+  }
+  .mini-card-img {
+    margin: 0 auto 3px;
+    border-radius: 7px;
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .mini-card-item {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mini-card-item {
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+}

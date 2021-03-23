@@ -1,0 +1,156 @@
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: rgba(18, 18, 18, .4);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+}
+
+.modal-box {
+  width: 100%;
+  margin: auto;
+  padding: 20px 15px;
+  position: relative;
+  background-color: $grey5;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, 0.3);
+  pointer-events: auto;
+  outline: 0;
+
+  .form-group {
+    max-width: 90%;
+  }
+}
+
+.modal-title {
+  margin-bottom: 5px;
+}
+
+.modal-subtitle {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-group__btn {
+  display: flex;
+  align-items: center;
+}
+
+.form-group__link {
+  margin-left: 20px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.modal-box__bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &::before {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 15px;
+    background: $blue-gradient2;
+    content: '';
+  }
+}
+
+.modal-box__bottom-text {
+  margin-right: 8px;
+}
+
+.modal-close {
+  top: 15px;
+  right: 15px;
+  width: 22px;
+  height: 22px;
+  padding-top: 1px;
+  font-size: 13px;
+  position: absolute;
+}
+
+.modal-form__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-add-event__holder {
+  padding: 30px;
+  overflow: hidden;
+  background: #E3E5EC;
+  border-radius: 15px;
+}
+
+.modal-add-event__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: $black;
+  font-size: 16px;
+}
+
+.modal-add-event__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.modal-content {
+  padding: 20px 16px;
+}
+
+.modal-footer {
+  margin-top: auto;
+  padding-top: 30px;
+
+  &::before {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+    display: block;
+    background: linear-gradient(135deg, #36d1dc 0, #5b86e5 100%);
+    content: '';
+  }
+}
+
+.modal-content__title {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #36d1dc 0, #5b86e5 100%);
+    display: block;
+    content: '';
+  }
+}
+
+.modal-body {
+  padding-bottom: 20px;
+
+  &::after {
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #36d1dc 0, #5b86e5 100%);
+    display: block;
+    content: '';
+  }
+}
+
+@media (min-width: 1100px) {
+  .modal-address-events {
+    max-width: 934px;
+  }
+}

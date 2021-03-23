@@ -1,0 +1,55 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Личный кабинет вендора - fun2day" %}
+{% block topPanel %}{% include 'desktop-table/top-panel.twig' %}{% endblock %} {% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+  <div style="position: fixed;top: 0;left: 50%;z-index: 9999;background-color: red;width: 1px;height: 100vh"></div>
+<div class="container" style="padding-top: 30px; padding-bottom: 30px">
+  <div class="row">
+    <div class="col-lg-3">
+      <button class="btn-primary btn"><span class="btn-text">Отправить</span></button>
+      <br><br>
+      <div class="btn-primary btn"><span class="btn-text">Отправить</span></div>
+      <br><br>
+      <a href="#" class="btn-primary btn"><span class="btn-text">Отправить</span></a>
+    </div>
+    <div class="col-lg-3">
+      <button class="btn-primary btn" disabled><span class="btn-text">Отправить</span></button>
+      <br><br>
+      <div class="btn-primary btn disabled"><span class="btn-text">Отправить</span></div>
+      <br><br>
+      <a href="#" class="btn-primary btn disabled"><span class="btn-text">Отправить</span></a>
+    </div>
+    <div class="col-lg-3">
+      <button class="btn-secondary btn"><span class="btn-text">Отправить</span></button>
+      <br><br>
+      <div class="btn-secondary btn"><span class="btn-text">Отправить</span></div>
+      <br><br>
+      <a href="#" class="btn-secondary btn"><span class="btn-text">Отправить</span></a>
+    </div>
+    <div class="col-lg-3">
+      <button class="btn-secondary btn" disabled><span class="btn-text">Отправить</span></button>
+      <br><br>
+      <div class="btn-secondary btn disabled"><span class="btn-text">Отправить</span></div>
+      <br><br>
+      <a href="#" class="btn-secondary btn disabled"><span class="btn-text">Отправить</span></a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

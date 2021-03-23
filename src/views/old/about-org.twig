@@ -1,0 +1,444 @@
+{% extends "layout/layout.twig" %}
+{% set title = "Проводи больше мероприятий вместе с FUN2DAY" %}
+{% set breadcrumbCurrent = "Стать организатором" %}
+{% block topPanel %}{% include 'desktop-table/about-panel.twig' %}{% endblock %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+  <header class="about-org-header" id="about-org-header">
+    <h1 class="about-header__title">
+      Проводи больше мероприятий
+      <br>
+      вместе с FUN2DAY
+    </h1>
+    <p class="about-header__text">
+      FUN2DAY - это инновационный сервис по поиску и бронированию<br>
+      мероприятий. На платформе собраны все развлечения.
+    </p>
+    <button class="btn-primary btn" data-toggle="modal" data-target="#modal-register__org">
+      <span class="btn-text">Стать организатором</span>
+    </button>
+  </header>
+
+  <div class="container">
+    <section class="about-org-intro">
+      <h2 class="about-intro__title">Регистрируйся на Fun2day.ru вы получаете:</h2>
+
+      <ul class="list-blue">
+        <li class="list-blue-item">бесплатное размещение мероприятий</li>
+        <li class="list-blue-item">бесплатный перевод описания мероприятия на другие языки</li>
+        <li class="list-blue-item">круглосуточная поддержка по телефону и email</li>
+        <li class="list-blue-item">оповещение о каждом заказе</li>
+        <li class="list-blue-item">удобное общение с клиентами в чате</li>
+        <li class="list-blue-item">подтверждение заявок с ПК, планшета или смартфона</li>
+      </ul>
+    </section>
+
+    <section class="about-org-info" id="terms">
+      <h2 class="about-info__title">Условия сотрудничества</h2>
+
+      <div class="about-info__list row">
+        <div class="about-info__item col-lg-6 about-org-info__first">
+          <div class="about-info__item-content">
+            <h3 class="about-info__item-title">Размещение на сайте бесплатно.</h3>
+            <div>
+              Добавьте информацию о своей компании, чтобы пользователи узнали о вас больше. Опишите мероприятие и расскажите о ваших преимуществах. Добавьте лучшие фотографии. Получайте заказы и управляйте ими в удобной системе управления.
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info__item col-lg-6 about-org-info__second">
+          <div class="about-info__item-content">
+            <h3 class="about-info__item-title">Берем 10% от стоимости каждого заказа.</h3>
+            <div>
+              Мы заинтересованы в том, чтобы ваши мероприятия посещались. Поэтому  мы вкладываем деньги
+              в продвижение, а вы отвечаете за проведение мероприятия. Если вы не отклоняете заказы и клиенты всегда довольны у вас будут особые условия.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-service about-org-service row" id="working">
+      <h2 class="about-service__title col-12">Как работает наш сервис?</h2>
+
+      <div class="col-sm-6">
+        <ul class="about-service__list list-unstyled">
+          <li class="list-check__item">
+            <div class="list-check__title">Бесплатно добавляйте свои мероприятия в каталог.</div>
+
+            Бесплатно добавляйте свои мероприятия в наш единый каталог отдыха и развлечений приключений. Выбирайте
+            подходящую категорию для размещения мероприятия.<br>
+            У каждого предложения есть своя собственная страница.
+          </li>
+          <li class="list-check__item">
+            <div class="list-check__title">Получайте уведомления о новых заказах.</div>
+
+            Уведомления о новых заказах будут приходить вам на электронную почту или в виде смс.
+          </li>
+          <li class="list-check__item">
+            <div class="list-check__title">Подтверждайте заказы.</div>
+
+            Подтверждайте заказ клиента в личном кабинете. Переносите время или место проведения мероприятия, если это
+            необходимо. Обсуждайте детали проведения мероприятия с клиентом.
+          </li>
+          <li class="list-check__item">
+            <div class="list-check__title">Проводите мероприятие.</div>
+
+            Клиент на месте оплачивает вам стоимость развлечения за вычетом комиссии за бронирование мероприятия.
+            <a href="#">Подробнее о комиссии >>></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row pb-5">
+      <div class="col-md-8">
+        <!-- BEGIN: comments -->
+        <div class="toggle-more-list comments" id="reviews">
+          <div class="comments-heading">
+            <h2 class="mb-0">Отзывы о мероприятии</h2>
+            <div class="ml-auto mr-2">10 отзывов</div>
+          </div>
+
+          <div class="comments-list">
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                  <span class="user-account__pic user-account__pic-large"></span>
+                  <span class="user-account__name">Констациная Константиновна Констановна</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                  <span class="user-account__pic user-account__pic-large"></span>
+                  <span class="user-account__name">Констациная Константиновна Констановна</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                  <span class="user-account__pic user-account__pic-large"></span>
+                  <span class="user-account__name">Констациная Константиновна Констановна</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                    <span class="user-account__pic user-account__pic-large">
+                      <img class="user-account__image" src="img/example/avatar-07.png" alt="">
+                    </span>
+                  <span class="user-account__name">Иван Иванович Иванов</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл.
+              </div>
+            </section>
+
+            <section class="toggle-more-item comment">
+              <div class="comment-head">
+                <a href="#" class="user-account">
+                  <span class="user-account__pic user-account__pic-large"></span>
+                  <span class="user-account__name">Констациная Константиновна Констановна</span>
+                </a>
+              </div>
+
+              <div class="comment-text">
+                Скалярное произведение переворачивает нормальный математический анализ. Поле направлений, общеизвестно, допускает график функции многих переменных. График функции, в первом приближении, решительно создает абстрактный интеграл от функции комплексной переменной, что и требовалось доказать. Тем не менее, лемма традиционно обуславливает функциональный анализ.
+              </div>
+            </section>
+          </div>
+
+          <div class="toggle-more toggle-more__decor">
+            <div class="row align-items-center">
+              <div class="col-lg-4 offset-lg-4 text-center">
+                <button type="button" class="toggle-more-show btn-primary btn">
+                  <span class="btn-text">Показать ещё</span>
+                </button>
+              </div>
+              <div class="col-lg-3 ml-auto text-right">
+                <span class="toggle-more-collapse as-link__dashed">Свернуть</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END: comments -->
+
+
+        <div class="toggle-more-list">
+          <h2 id="question">Частые вопросы</h2>
+
+          <div class="faq-list">
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Безопасность</h3>
+              <div>
+                Бронируйте сразу, как только определились с&nbsp;датами поездки. Подтверждение проведения экскурсии от&nbsp;гида
+                будет залогом того, что гид не&nbsp;будет занят другими заказами в&nbsp;нужные вам даты. А&nbsp;если
+                вдруг
+                у&nbsp;вас изменятся планы, помните, что предоплату всегда можно вернуть.
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Цена за&nbsp;групповую экскурсию или она будет индивидуальной?</h3>
+              <div>
+                В&nbsp;нашем представлении группа&nbsp;&mdash; это вы&nbsp;и&nbsp;ваши спутники. Все экскурсии, кроме
+                тех,
+                у&nbsp;которых заранее указана дата проведения,&nbsp;&mdash; индивидуальные и&nbsp;могут быть
+                забронированы на&nbsp;удобное вам время. Если в&nbsp;описании сказано, что экскурсия проводится для
+                группы
+                до&nbsp;10&nbsp;человек, это значит, что ваших спутников не&nbsp;должно быть больше 10. Но&nbsp;никаких
+                посторонних людей на&nbsp;экскурсии не&nbsp;будет, только вы&nbsp;и&nbsp;гид!
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Нас больше, чем может принять гид, что делать?</h3>
+              <div>
+                Уточните у&nbsp;гида в&nbsp;переписке, возможно&nbsp;ли проведение экскурсии в&nbsp;более многочисленной
+                группе, чем указано в&nbsp;описании экскурсии.
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Что делать, если гид не&nbsp;отвечает?</h3>
+              <div>
+                Обычно между отправкой вашего сообщения и&nbsp;ответом гида проходит некоторое время&nbsp;&mdash; от&nbsp;одного
+                часа до&nbsp;дня. Если гид не&nbsp;отвечает более суток, напишите нам в&nbsp;службу поддержки на&nbsp;адрес
+                <a href="mailto:welcome@fun2day.ru" rel="nofollow">welcome@fun2day.ru</a>, мы&nbsp;постараемся выяснить,
+                в&nbsp;чем
+                причина, и&nbsp;обязательно ответим вам. Ну, а&nbsp;если вопрос срочный, то&nbsp;звоните на
+                <a href="tel:+79776958105" rel="nofollow">+7 (977) 695 81-05</a>.
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Безопасность</h3>
+              <div>
+                Бронируйте сразу, как только определились с&nbsp;датами поездки. Подтверждение проведения экскурсии от&nbsp;гида
+                будет залогом того, что гид не&nbsp;будет занят другими заказами в&nbsp;нужные вам даты. А&nbsp;если
+                вдруг
+                у&nbsp;вас изменятся планы, помните, что предоплату всегда можно вернуть.
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Цена за&nbsp;групповую экскурсию или она будет индивидуальной?</h3>
+              <div>
+                В&nbsp;нашем представлении группа&nbsp;&mdash; это вы&nbsp;и&nbsp;ваши спутники. Все экскурсии, кроме
+                тех,
+                у&nbsp;которых заранее указана дата проведения,&nbsp;&mdash; индивидуальные и&nbsp;могут быть
+                забронированы на&nbsp;удобное вам время. Если в&nbsp;описании сказано, что экскурсия проводится для
+                группы
+                до&nbsp;10&nbsp;человек, это значит, что ваших спутников не&nbsp;должно быть больше 10. Но&nbsp;никаких
+                посторонних людей на&nbsp;экскурсии не&nbsp;будет, только вы&nbsp;и&nbsp;гид!
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Нас больше, чем может принять гид, что делать?</h3>
+              <div>
+                Уточните у&nbsp;гида в&nbsp;переписке, возможно&nbsp;ли проведение экскурсии в&nbsp;более многочисленной
+                группе, чем указано в&nbsp;описании экскурсии.
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Безопасность</h3>
+              <div>
+                Бронируйте сразу, как только определились с&nbsp;датами поездки. Подтверждение проведения экскурсии от&nbsp;гида
+                будет залогом того, что гид не&nbsp;будет занят другими заказами в&nbsp;нужные вам даты. А&nbsp;если
+                вдруг
+                у&nbsp;вас изменятся планы, помните, что предоплату всегда можно вернуть.
+              </div>
+            </div>
+
+            <div class="toggle-more-item faq-item">
+              <h3 class="mb-1">Цена за&nbsp;групповую экскурсию или она будет индивидуальной?</h3>
+              <div>
+                В&nbsp;нашем представлении группа&nbsp;&mdash; это вы&nbsp;и&nbsp;ваши спутники. Все экскурсии, кроме
+                тех,
+                у&nbsp;которых заранее указана дата проведения,&nbsp;&mdash; индивидуальные и&nbsp;могут быть
+                забронированы на&nbsp;удобное вам время. Если в&nbsp;описании сказано, что экскурсия проводится для
+                группы
+                до&nbsp;10&nbsp;человек, это значит, что ваших спутников не&nbsp;должно быть больше 10. Но&nbsp;никаких
+                посторонних людей на&nbsp;экскурсии не&nbsp;будет, только вы&nbsp;и&nbsp;гид!
+              </div>
+            </div>
+          </div>
+
+          <div class="toggle-more toggle-more__decor">
+            <div class="row align-items-center">
+              <div class="col-lg-4 offset-lg-4">
+                <button type="button" class="toggle-more-show btn-primary btn">
+                  <span class="btn-text">Показать ещё</span>
+                </button>
+              </div>
+              <div class="col-lg-3 ml-auto text-right">
+                <span class="toggle-more-collapse as-link__dashed">Свернуть</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-org-aside col-md-4">
+        <div class="about-org-aside__box">
+          <h2>Зарегистрируйтесь в качестве организатора</h2>
+          <p>
+            Мы сотрудничаем с организаторами, которые заинтересованы сделать индустрию развлечений лучше.
+          </p>
+          <div class="mb-4">
+            <span class="text-black">Служба поддержки:</span>
+            <a href="mailto:org@fun2day.ru" rel="nofollow">org@fun2day.ru</a>
+          </div>
+          <button class="btn-secondary btn" type="button" data-dismiss="modal" data-toggle="modal" data-target="#modal-register__org">
+            <span class="btn-text">Стать организатором</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'desktop-table/footer-org.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'desktop-table/modal.twig' %}
+{% endblock %}
+
+{% block search %}
+  {% include 'desktop-table/search-area.twig' %}
+{% endblock %}
+
+{% block entertainment %}
+  {% include 'desktop-table/entertainment.twig' %}
+{% endblock %}

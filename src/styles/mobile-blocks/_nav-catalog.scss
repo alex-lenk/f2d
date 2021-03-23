@@ -1,0 +1,230 @@
+/* BEGIN: nav-catalog */
+.nav-catalog {
+  margin-bottom: 30px;
+  padding: 24px 15px 0;
+  background-color: $grey5;
+  box-shadow: 0 8px 15px rgba(95, 105, 142, 0.3);
+  border-radius: 15px;
+}
+
+.nav-catalog-title {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: $black;
+}
+
+.nav-catalog-btn {
+  margin: 19px -15px 0;
+  padding: 10px 15px;
+  color: $black;
+  background-color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: none;
+
+  &::before {
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .btn-text {
+    margin: 0;
+  }
+
+  &:hover {
+    color: $black;
+    box-shadow: none;
+  }
+}
+
+.nav-catalog-panel {
+  width: 100%;
+  height: 100%;
+  padding-top: 93px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 46;
+  overflow: hidden;
+  background-color: $grey4;
+  will-change: transform;
+  transform: translateX(-100%);
+  transition: transform .2s ease-in-out;
+
+  .menu-entertainment {
+    top: -50px;
+  }
+}
+
+.nav-catalog-content {
+  position: absolute;
+  overflow: hidden;
+  height: calc(100% - 150px);
+  left: 0;
+  top: 145px;
+}
+
+.nav-catalog-content__item {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.nav-catalog-opened {
+  transform: translateX(0);
+}
+
+/* BEGIN: nav-catalog-menu */
+
+.nav-catalog-menu {
+  width: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: -7px;
+  margin-right: -7px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+  background-color: #e3e5ec;
+  overflow-x: auto;
+  display: flex;
+}
+
+.nav-catalog-menu__item {
+  padding: 7px;
+  flex-shrink: 0;
+
+  &.active {
+    color: $black;
+
+    .nav-catalog-menu__link {
+      background: linear-gradient(278.69deg, rgba(0, 0, 0, .6) 5.98%, rgba(255, 255, 255, 0) 97.09%), #e3e5ec;
+      background-blend-mode: soft-light, normal;
+      border-color: #e3e5ec;
+      box-shadow: 3px 3px 4px rgba(56, 72, 114, .2), -3px -3px 4px #fff, inset 3px 3px 4px rgba(56, 72, 114, .25), inset -3px -3px 4px #fff;
+    }
+  }
+}
+
+.nav-catalog-menu__link {
+  padding: 7px 18px;
+  background: linear-gradient(135deg, #eeeff4 0, #f6f7fc 100%);
+  border: 2px solid rgba(255, 255, 255, .3);
+  box-shadow: 1px 1px 2px #c7c9d2, -1px -1px 2px #fafbff;
+  border-radius: 15px;
+  text-align: center;
+
+  &::before {
+    display: none;
+  }
+}
+
+/* END: nav-catalog-menu */
+
+/* BEGIN: nav-catalog-dropdown */
+
+.nav-catalog-dropdown {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 140px;
+  z-index: 48;
+  background-color: rgba($black, .35);
+  will-change: transform;
+  transform: translateX(-100%);
+  transition: transform .2s ease-in-out;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.nav-catalog-dropdown__control {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 75px;
+  height: 70px;
+  top: 70px;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background: $grey-gradient;
+  display: flex;
+  align-items: center;
+}
+
+.nav-catalog-dropdown__title {
+  margin-top: 13px;
+  font-weight: 700;
+  font-size: 20px;
+  color: $black;
+}
+
+.nav-catalog-dropdown__list {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: $grey-gradient;
+  margin-left: 60px;
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 2px;
+    display: block;
+    //top: 0;
+    //position: absolute;
+    background: $blue-gradient2;
+    content: '';
+  }
+}
+
+.nav-catalog-dropdown__item {
+  border-bottom: 1px solid #c9c9c9;
+
+  &:nth-child(6n) {
+    margin-bottom: 20px;
+  }
+}
+
+.nav-catalog-dropdown__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: $black;
+  display: block;
+  font-size: 14px;
+}
+
+.nav-catalog-dropdown__close {
+  margin-right: 26px;
+}
+
+/* END: nav-catalog-dropdown */
+
+.nav-catalog-list {
+}
+
+.nav-catalog-list__item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: relative;
+  font-weight: 700;
+  color: #121212;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.nav-catalog-list__link {
+  color: inherit;
+}

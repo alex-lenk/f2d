@@ -1,0 +1,39 @@
+<!-- BEGIN: desktop component -->
+<nav class="top-panel">
+  <div class="container">
+    <div class="top-panel-holder row">
+      <div class="col-xl-5">
+        <ul class="top-panel-nav list-unstyled">
+          <li class="top-panel-nav__item">
+            <a href="#terms" class="top-panel-nav__link link-decor js__go-anchor">Условия</a>
+          </li>
+          <li class="top-panel-nav__item">
+            <a href="#working" class="top-panel-nav__link link-decor js__go-anchor">Как мы работаем</a>
+          </li>
+          <li class="top-panel-nav__item">
+            <a href="#reviews" class="top-panel-nav__link link-decor js__go-anchor">Отзывы</a>
+          </li>
+          <li class="top-panel-nav__item">
+            <a href="#question" class="top-panel-nav__link link-decor js__go-anchor">Вопросы</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-xl-2">
+        <a href="#about-org-header" class="js__go-anchor"><img src="img/logo.svg" class="top-panel__logo" alt="fun2day"></a>
+      </div>
+
+      <div class="top-panel-right col-xl-2 offset-xl-1">
+        {% include 'top-panel-lang.twig' %}
+        {% include 'top-panel-currency.twig' %}
+      </div>
+
+      <div class="top-panel-right col-xl-2">
+        <div class="btn btn-bright mx-auto" data-toggle="modal" data-target="#modal-auth__org">
+          <span class="btn-text">Войти</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- END: desktop component -->

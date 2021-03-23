@@ -1,0 +1,26 @@
+.mini-card {
+  margin-left: rem(-7.5);
+  margin-right: rem(-7.5);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mini-card-item {
+  margin-bottom: 18px;
+  padding-left: rem(7.5);
+  padding-right: rem(7.5);
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.mini-card-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.mini-card-img {
+  margin: 0 auto 3px;
+  border-radius: 7px;
+  display: block;
+}

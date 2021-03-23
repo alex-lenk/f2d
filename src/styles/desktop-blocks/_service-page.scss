@@ -1,0 +1,25 @@
+.service-page {
+  text-align: center;
+  height: 924px;
+  padding-top: 94px;
+  background: url(../img/bg-services-page.svg) no-repeat top center;
+}
+
+.service-page-title {
+  margin-bottom: 13px;
+}
+
+.service-page__number {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 239px;
+  color: #FB6F6E;
+}
+
+@media (min-width: 1921px) {
+  .service-page {
+    height: 1250px;
+    background-size: cover;
+  }
+}

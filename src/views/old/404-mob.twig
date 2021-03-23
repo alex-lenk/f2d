@@ -1,0 +1,35 @@
+{% extends "layout/layout.twig" %}
+{% set title = "404 ошибка - fun2day" %}
+{% set versionDevice = "-mobile" %}
+{% block mobHeader %}{% include 'mobile/header.twig' %}{% endblock %}
+
+{% block content %}
+<div class="service-page">
+  <div class="container">
+    <div class="service-page__oops">Упс!</div>
+    <h1 class="service-page-title">Кажется ты заблудился?</h1>
+    <div class="service-page__number">404</div>
+    <a href="/" class="btn-primary btn"><span class="btn-text">На главную</span></a>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'mobile/footer.twig' %}
+{% endblock %}
+
+{% block modal %}
+  {% include 'mobile/modal.twig' %}
+{% endblock %}
+
+{% block searchPanel %}
+  {% include 'mobile/search-panel.twig' %}
+{% endblock %}
+
+{% block searchResult %}
+  {% include 'mobile/search-result.twig' %}
+{% endblock %}
+
+{% block mobileMenu %}
+  {% include 'mobile/menu.twig' %}
+{% endblock %}

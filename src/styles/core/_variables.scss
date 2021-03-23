@@ -1,0 +1,31 @@
+//- Цвет заголовков ( #121212 )
+$black: #333;
+
+//- Цвет наборного текста ( #727272 )
+$grey: #727272;
+
+//- Плейсхолдеры / Подсказки ( #A7ADB8 )
+$grey2: #a7adB8;
+
+//- на темном фоне ( #e1e1e1e1 )
+$grey3: #e1e1e1e1;
+
+//- Цвет текста ссылок ( #0575E6 )
+$blue: #4080C0;
+$blue2: #021b79;
+$blue3: #2c58ae;
+$darkBlue: #121B4B;
+
+$grey4: #e3e5ec;
+$grey5: #d3d9ed;
+
+$green: #00b728;
+$green2: #2baa56;
+$red: #b90000;
+$red2: #b52241;
+$orange: #e38210;
+
+$blue-gradient: linear-gradient(135deg, $blue 0%, $blue2 100%);
+$blue-gradient2: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+$blue-gradient3: linear-gradient(135deg, #c2e9fb 0%, #a1c4fd 100%);
+$grey-gradient: linear-gradient(135deg, #eeeff4 0%, #f6f7fc 100%);

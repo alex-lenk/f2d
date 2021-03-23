@@ -1,0 +1,134 @@
+.about-org-header {
+  height: 697px;
+  padding-top: 30px;
+  margin-bottom: 65px;
+  background: url(../img/about-org/general-m.svg) no-repeat right bottom;
+
+  @media (min-width: 376px) {
+    background-size: cover;
+  }
+}
+
+.about-org-intro {
+  margin-bottom: 50px;
+  padding-top: 40px;
+  position: relative;
+
+  &::before {
+    left: 0;
+    position: absolute;
+    background: url(../img/about-org/decor-m-01.svg) no-repeat center;
+    background-size: contain;
+    content: '';
+    width: 205px;
+    height: 154px;
+    top: -145px;
+  }
+}
+
+.about-org-info {
+  margin-bottom: 50px;
+}
+
+.about-org-info__first,
+.about-org-info__second {
+  &::before {
+    height: 151px;
+  }
+}
+
+.about-org-info__first::before {
+  background-image: url(../img/about-org/decor-02.svg);
+}
+
+.about-org-info__second::before {
+  background-image: url(../img/about-org/decor-03.svg);
+}
+
+.about-org-info__more {
+  font-size: 14px;
+}
+
+
+.about-intro {
+  padding-top: 43px;
+  margin-bottom: 50px;
+  position: relative;
+
+  &::before {
+    width: 205px;
+    height: 140px;
+    top: -112px;
+    left: 0;
+    position: absolute;
+    background: url(../img/about/zen.svg) no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+}
+
+.about-intro__title {
+  margin-bottom: 5px;
+}
+
+.about-intro__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.about-info__title {
+  margin-bottom: 30px;
+}
+
+.about-info {
+  margin-bottom: 4px;
+}
+
+.about-info__list {
+  display: flex;
+}
+
+.about-offer {
+  height: 433px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 513px;
+    top: -80px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: url(../img/about/yoga.svg) no-repeat 68% top;
+    background-size: 1347px 537px;
+    content: '';
+  }
+}
+
+.about-offer__title {
+  color: $darkBlue;
+}
+
+.about-org-service__decor::after {
+  width: 100%;
+  height: 238px;
+  margin-top: 5px;
+  background: url(../img/about-org/decor-04.svg) no-repeat center;
+  background-size: contain;
+  content: '';
+  display: block;
+}
+
+.about-org-aside {
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.about-org-aside__box {
+  padding: 15px;
+  background: $grey5;
+  border-radius: 15px;
+}

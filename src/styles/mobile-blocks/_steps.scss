@@ -1,0 +1,74 @@
+.steps {
+  margin-bottom: 50px;
+}
+
+.steps-title {
+  margin-bottom: 6px;
+}
+
+.steps-text {
+  margin-bottom: 30px;
+}
+
+.steps-list {
+  margin-bottom: 30px;
+}
+
+.steps-item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 12px 10px;
+  background-size: 27px 27px;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+  }
+
+  &::after {
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #EEEFF4 0%, #F6F7FC 100%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 4px #C7C9D2, -2px -2px 4px #FAFBFF;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    position: relative;
+    flex-shrink: 0;
+    content: ''
+  }
+
+  &:nth-child(1) {
+    background-image: url(../img/icons/shopping-list.svg);
+  }
+
+  &:nth-child(2) {
+    background-image: url(../img/icons/chat.svg);
+  }
+
+  &:nth-child(3) {
+    background-image: url(../img/icons/credit-card.svg);
+  }
+
+  &:nth-child(4) {
+    background-image: url(../img/icons/bill.svg);
+  }
+
+  &:nth-child(5) {
+    background-image: url(../img/icons/route.svg);
+  }
+}
+
+.steps-item__text {
+  font-size: 14px;
+  line-height: 20px;
+  order: 1;
+}

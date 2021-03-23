@@ -1,0 +1,34 @@
+.rating-review {
+  width: 295px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.rating-review-item {
+  width: 55px;
+  height: 55px;
+  padding-left: 7px;
+  padding-right: 7px;
+  cursor: pointer;
+  background: url(../img/icons/star.svg) no-repeat center;
+  background-size: 53px 50px;
+  transition: background-image .2s ease-in-out;
+}
+
+.rating-review__no-rade {
+  .rating-review-item {
+    background-image: url(../img/icons/star-empty.svg);
+  }
+
+  &:hover .rating-review-item {
+    background-image: url(../img/icons/star.svg);
+
+    &:hover ~ .rating-review-item {
+      background-image: url(../img/icons/star-empty.svg);
+    }
+  }
+}
+
+.rating-review-active ~ .rating-review-item {
+  background-image: url(../img/icons/star-empty.svg);
+}

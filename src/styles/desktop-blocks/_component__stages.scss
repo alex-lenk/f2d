@@ -1,0 +1,41 @@
+.stages {
+  padding: 30px;
+  background: linear-gradient(135deg, #EEEFF4 0%, #F6F7FC 100%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: -2px -2px 6px #FAFBFF, 3px 3px 8px #C7C9D2;
+  border-radius: 15px;
+}
+
+.stage-item:not(:last-child) {
+  margin-bottom: 30px
+}
+
+.stage-item__title {
+  font-weight: 600;
+  color: $black;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 8px;
+    color: #ddd;
+    font-size: 22px;
+  }
+}
+
+.stage-item__text {
+  margin-top: 7px;
+}
+
+.stage-passed {
+  color: #22BD57;
+
+  .stage-item__title {
+    color: inherit;
+
+    &::before {
+      color: inherit;
+    }
+  }
+}
