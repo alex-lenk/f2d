@@ -3,15 +3,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Montserrat-Regular.woff2) format('woff2');
+  src: url(../fonts/Montserrat-Regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-display: swap;
-  src: url(../fonts/Montserrat-Medium.woff2) format('woff2');
+  src: url(../fonts/Montserrat-Medium.woff) format('woff');
 }
 
 @font-face {
@@ -19,5 +19,13 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/Montserrat-Bold.woff2) format('woff2');
+  src: url(../fonts/MontserratBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: sprite;
+  src: url(../fonts/sprite.woff?wi0bj8) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }

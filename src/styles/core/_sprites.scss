@@ -1,0 +1,14 @@
+@import "sprites-variables";
+
+[class^="sprite-"],
+[class*=" sprite-"] {
+  line-height: 1;
+
+  &::before {
+    @include coreIcon
+  }
+}
+
+.sprite-check::before {
+  content: $sprite-check;
+}

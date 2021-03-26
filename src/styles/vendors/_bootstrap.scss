@@ -74,3 +74,10 @@
     padding-left: 8px;
   }
 }
+
+@media (min-width: 576px) and (max-width: 1365px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

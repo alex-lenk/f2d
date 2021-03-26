@@ -25,6 +25,46 @@
   }
 }
 
+.btn-primary {
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  color: #4080C0;
+  background-color: #fff;
+  border: 2px solid #F0F4F8;
+  border-radius: 16px;
+  transition: border .2s ease-in-out;
+
+  &:hover {
+    border-color: #4080C0;
+  }
+}
+
+.btn-secondary {
+  padding: 12px 22px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #FFE000;
+  border-radius: 32px;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+/*
 .btn-primary,
 .btn-secondary,
 .btn-danger {
@@ -289,3 +329,4 @@
     height: 40px;
   }
 }
+*/

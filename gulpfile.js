@@ -136,31 +136,7 @@ function scripts() {
 function scripts_libs() {
   return gulp.src([
     './src/js/vendors/jquery.min.js',
-
-    './src/js/vendors/jquery.validate.min.js',
-    './src/js/vendors/jquery-validation/messages_ru.min.js',
-
-    './src/js/vendors/bootstrap/util.js',
-    './src/js/vendors/bootstrap/modal.js',
-    './src/js/vendors/bootstrap/collapse.js',
-
-    './src/js/vendors/jquery.inputmask.min.js',
-
-    './src/js/vendors/slick.min.js',
-
-    './src/js/vendors/materialize/global.js',
-    './src/js/vendors/materialize/component.js',
-    './src/js/vendors/materialize/cash.js',
-    './src/js/vendors/materialize/carousel.js',
-
-    './src/js/vendors/jquery-ui/version.js',
-    './src/js/vendors/jquery-ui/keycode.js',
-    './src/js/vendors/jquery-ui/widgets/datepicker.js',
-    './src/js/vendors/jquery-ui/i18n/datepicker-ru.js',
-
-    './src/js/vendors/sticky-kit.min.js',
-
-    './src/js/vendors/perfect-scrollbar.min.js'
+    './src/js/vendors/scrollBar.js'
   ])
     .pipe(concat('libs.js'))
     .pipe(uglify())

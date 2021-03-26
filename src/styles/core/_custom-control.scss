@@ -13,11 +13,10 @@
     top: -1px;
     left: 0;
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #F0F4F8;
     pointer-events: none;
-    background: linear-gradient(135deg, #EEEFF4 0%, #F6F7FC 100%);
-    box-shadow: inset 3px 3px 6px rgba(56, 72, 114, 0.25), inset -3px -3px 6px #FFFFFF;
     transition: background-color .15s ease-in-out, box-shadow .15s ease-in-out;
     content: "";
   }
@@ -48,11 +47,11 @@
 }
 
 .custom-control-label {
-  margin-left: 35px;
+  margin-left: 47px;
   margin-bottom: 0;
   position: relative;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.2 !important;
   display: flex;
   align-items: center;
 
@@ -72,27 +71,18 @@
 }
 
 .custom-checkbox {
+  min-height: 32px;
+
+
   &::before {
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
-  .custom-control-label {
-    &::before {
-      left: -30px;
-      top: 3px;
-      font-size: 17px;
-    }
-
-    &::after {
-      border-radius: 5px;
-      top: -1px;
-      left: -35px;
-      width: 25px;
-      height: 25px;
-      background: $blue-gradient2;
-      box-shadow: inset 3px 3px 6px rgba(56, 72, 114, 0.25), inset -3px -3px 6px rgba(255, 255, 255, 0.25);
-      content: "";
-    }
+  .custom-control-label::before {
+    left: -39px;
+    top: 5px;
+    font-size: 18px;
+    color: #4080C0;
   }
 }
 

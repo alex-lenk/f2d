@@ -25,11 +25,7 @@ $body-bg: #fff;
 
 // Grid containers
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1374px
+  xxl: 1376px
 );
 
 // Grid breakpoints
@@ -41,6 +37,8 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1366px
 );
+
+$grid-gutter-width: 32px !default;
 
 
 // Forms
