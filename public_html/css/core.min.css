@@ -4088,7 +4088,7 @@ select {
   margin-bottom: 0;
   position: relative;
   font-size: 14px;
-  line-height: 1.2 !important;
+  line-height: 32px !important;
   display: flex;
   align-items: center; }
   .custom-control-label::before, .custom-control-label::after {
