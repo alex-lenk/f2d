@@ -24,6 +24,56 @@
 .badge-note {
   background: linear-gradient(101.86deg, #FF981F 0.63%, #E2810F 100%); }
 
+.cookie {
+  width: 960px;
+  height: 144px;
+  padding: 16px 16px 16px 48px;
+  border-radius: 16px;
+  background-color: #FFE000;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  z-index: 30;
+  transform: translateX(-50%); }
+
+.cookie-text {
+  font-size: 14px;
+  line-height: 32px; }
+
+.cookie-link {
+  color: inherit;
+  text-decoration: none; }
+
+.cookie-right {
+  flex-shrink: 0; }
+  .cookie-right::before {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: url(../img/icons/cookie-decor.svg) no-repeat center;
+    background-size: contain;
+    display: block;
+    content: ''; }
+
+.cookie-confirm {
+  width: 160px;
+  height: 48px;
+  margin-top: -11px;
+  top: -3px;
+  position: relative;
+  z-index: 1;
+  background: #4080C0;
+  border: 0;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: .085rem;
+  text-transform: uppercase;
+  color: #fff; }
+
 .g-body-fixed {
   overflow: hidden; }
 
