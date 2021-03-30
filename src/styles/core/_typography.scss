@@ -1,5 +1,5 @@
 body {
-  padding-top: 18px;
+  //padding-top: 18px;
 }
 
 h4 {
@@ -18,6 +18,13 @@ h1, h2, h3, h4,
 
 img {
   max-width: 100%;
+}
+
+.section {
+  width: 100%;
+  max-width: 1344px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 766px) {

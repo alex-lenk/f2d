@@ -1,0 +1,47 @@
+.zl-scrollBarBox {
+  height: 100%;
+  position: absolute;
+  background: #F0F4F8;
+  border-radius: 32px;
+}
+
+.zl-scrollBar {
+  width: 16px !important;
+  position: absolute;
+  left: -6px;
+  top: 0;
+  background: #4080C0;
+  border-radius: 32px;
+  transition: background 0.3s;
+}
+
+.zl-scrollBar.zl-verticalBar {
+  min-height: 10px;
+}
+
+.zl-scrollBar.zl-horizontalBar {
+  min-width: 10px;
+}
+
+.zl-scrollContentDiv {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1366px) {
+  .zl-scrollBarBox {
+    left: 67.5%;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 1365px) {
+  .zl-scrollBarBox {
+    right: 6px !important;
+  }
+}

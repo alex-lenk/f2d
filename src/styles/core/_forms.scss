@@ -206,7 +206,17 @@ select {
   }
 
   .form-tip {
-    padding-top:5px;
+    padding-top: 5px;
     font-size: 13px;
   }
+}
+
+.g-close {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  fill: #4080c0;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: fill .2s ease-in-out, background-color .2s ease-in-out;
 }
