@@ -53,7 +53,7 @@
 "use strict";
 
 $(document).ready(function () {
-  if ($(window).width() > 1365) {
+  if ($(window).width() > 1279) {
     $('.g-agree-content__container').scrollBar({
       position: "y"
     });

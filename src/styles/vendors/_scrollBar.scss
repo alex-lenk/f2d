@@ -33,14 +33,14 @@
   left: 0;
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1280px) {
   .zl-scrollBarBox {
     left: 67.5%;
     right: auto !important;
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1279px) {
   .zl-scrollBarBox {
     right: 6px !important;
   }
