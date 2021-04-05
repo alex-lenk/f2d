@@ -25,20 +25,21 @@
   background: linear-gradient(101.86deg, #FF981F 0.63%, #E2810F 100%); }
 
 .cookie {
-  width: 960px;
-  height: 144px;
-  padding: 16px 16px 16px 48px;
-  border-radius: 16px;
-  background-color: #FFE000;
-  display: flex;
-  align-items: center;
+  width: 100%;
+  padding: 0 16px;
   position: fixed;
   bottom: 16px;
-  left: 50%;
-  z-index: 30;
-  transform: translateX(-50%); }
+  left: 0;
+  z-index: 30; }
+
+.cookie-inner {
+  width: 100%;
+  padding: 16px 16px 16px 48px;
+  border-radius: 16px;
+  background-color: #FFE000; }
 
 .cookie-text {
+  padding-right: 16px;
   font-size: 14px;
   line-height: 32px; }
 
@@ -74,55 +75,13 @@
   text-transform: uppercase;
   color: #fff; }
 
-.cookie {
-  width: 960px;
-  height: 144px;
-  padding: 16px 16px 16px 48px;
-  border-radius: 16px;
-  background-color: #FFE000;
-  display: flex;
-  align-items: center;
-  position: fixed;
-  bottom: 16px;
-  left: 50%;
-  z-index: 30;
-  transform: translateX(-50%); }
-
-.cookie-text {
-  font-size: 14px;
-  line-height: 32px; }
-
-.cookie-link {
-  color: inherit;
-  text-decoration: none; }
-
-.cookie-right {
-  flex-shrink: 0; }
-  .cookie-right::before {
-    width: 80px;
-    height: 80px;
+@media (min-width: 768px) {
+  .cookie-inner {
+    max-width: 960px;
+    height: 144px;
     margin: 0 auto;
-    background: url(../img/icons/cookie-decor.svg) no-repeat center;
-    background-size: contain;
-    display: block;
-    content: ''; }
-
-.cookie-confirm {
-  width: 160px;
-  height: 48px;
-  margin-top: -11px;
-  top: -3px;
-  position: relative;
-  z-index: 1;
-  background: #4080C0;
-  border: 0;
-  border-radius: 32px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: .085rem;
-  text-transform: uppercase;
-  color: #fff; }
+    display: flex;
+    align-items: center; } }
 
 .g-body-fixed {
   overflow: hidden; }
@@ -235,8 +194,7 @@
 .g-agree-hide__essence {
   padding-bottom: 80px; }
   .g-agree-hide__essence .legal {
-    font-size: 14px;
-    width: 100%; }
+    font-size: 14px; }
   .g-agree-hide__essence .essence {
     display: none; }
   .g-agree-hide__essence .zl-scrollBarBox {
@@ -372,6 +330,8 @@
       padding-right: 104px;
       flex-shrink: 0;
       transition: width .2s ease-in-out; }
+  .g-agree-hide__essence .legal {
+    width: 100%; }
   .g-agree-content__switch {
     right: 96px; }
   .g-agree-footer {
